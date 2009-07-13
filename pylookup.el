@@ -1,9 +1,8 @@
 (eval-when-compile
   (require 'browse-url)
   (require 'simple)
-  (require 'cl))
-
-(require 'ido)
+  (require 'cl)
+  (require 'ido))
 
 ;;=================================================================
 ;; user options
@@ -44,6 +43,10 @@
   "Keymap for `pylookup-mode-mode'.")
 
 (put 'pylookup-mode 'mode-class 'special)
+
+(defvar pylookup-completing-read 
+  (if (null 'ido-mode) 'ido-completing-read 'completing-read)
+  "Ido support with convenience")
 
 ;;=================================================================
 ;; pylookup mode specific interactive functions
@@ -116,8 +119,8 @@
   (split-string
    (with-output-to-string
      (call-process pylookup-program nil standard-output nil 
-		   "-d" (expand-file-name pylookup-db-file)
-		   "-c"))))
+           "-d" (expand-file-name pylookup-db-file)
+           "-c"))))
 
 (defun pylookup-exec-lookup (search-term)
   "Runs a pylookup process and returns a list of (term, url) pairs."
@@ -128,7 +131,7 @@
      (with-output-to-string
          (call-process pylookup-program nil standard-output nil 
                        "-d" (expand-file-name pylookup-db-file) 
-		       "-l" search-term))
+               "-l" search-term))
      "\n" t)))
 
 ;;=================================================================
@@ -141,11 +144,12 @@
   (interactive
    (list 
     (let ((initial (thing-at-point 'word)))
-      (ido-completing-read  "Lookup Python Documentation for: "
-                            (if pylookup-cache 
-                                pylookup-cache 
-                              (setq pylookup-cache (pylookup-exec-get-cache)))
-                            nil nil initial 'pylookup-history))
+      (funcall pylookup-completing-read
+               "Lookup Python Documentation for: "
+               (if pylookup-cache 
+                   pylookup-cache 
+                 (setq pylookup-cache (pylookup-exec-get-cache)))
+               nil nil initial 'pylookup-history))
     ))
 
   (let ((matches (pylookup-exec-lookup search-term)))
@@ -199,27 +203,27 @@
 
               (incf index)
               (insert (format " %03d) %-25s %-30s %10s" 
-			      index 
-			      (pylookup-trim api 25)
-			      (pylookup-trim module 30)
-			      (pylookup-trim type 10))))
+                  index 
+                  (pylookup-trim api 25)
+                  (pylookup-trim module 30)
+                  (pylookup-trim type 10))))
 
             (put-text-property
              (line-beginning-position) (line-end-position)
              'pylookup-target-url (cadr x))
             (insert "\n"))
 
-	 ;; goto first entry
+         ;; goto first entry
          (goto-line 3)
 
-	 ;; turn mode on
+         ;; turn mode on
          (pylookup-mode)
 
-	 ;; highlighting
+         ;; highlighting
          (font-lock-add-keywords nil `((,(format "\\(%s\\|%s\\|%s\\)" 
-						 search-term 
-						 (upcase search-term)
-						 (upcase-initials search-term))
+                         search-term 
+                         (upcase search-term)
+                         (upcase-initials search-term))
                                          1
                                          font-lock-keyword-face prepend)))
 
@@ -231,7 +235,7 @@
                                          1
                                          font-lock-doc-face prepend)))
 
-	 ;; store window configuration
+         ;; store window configuration
          (set (make-local-variable 'pylookup-return-window-config) cur-window-conf)
 
          ;; make fit to screen
@@ -240,13 +244,15 @@
 ;;;###autoload
 (defun pylookup-update (src)
   "Run pylookup-update and create the database at `pylookup-db-file'."
-  (interactive (list (ido-completing-read "Python Html Documentation source: "
-                                          pylookup-html-locations)))
+  (interactive 
+   (list (funcall pylookup-completing-read
+                  "Python Html Documentation source: "
+                  pylookup-html-locations)))
   
   ;; pylookup.py -d /home/myuser/.pylookup/pylookup.db -l <URL>
   (call-process pylookup-program nil standard-output nil 
                        "-d" (expand-file-name pylookup-db-file) 
-		       "-l" src))
+               "-l" src))
 
 (provide 'pylookup)
 ;;; pylookup.el ends here

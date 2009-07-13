@@ -20,15 +20,16 @@
       ex) "~/.emacs.d/pylookup"
 
 ;; ======================================================================
-;; add pylookup to your loadpath
-(add-to-list 'load-path "[PATH]")
+;; add pylookup to your loadpath, ex) ~/.emacs.d/pylookup
+(setq pylookup-dir "[PATH]")
+(add-to-list 'load-path pylookup-dir)
 
 ;; load pylookup when compile time
 (eval-when-compile (require 'pylookup))
 
 ;; set executable file and db file
-(setq pylookup-program "[PATH]/pylookup.py")
-(setq pylookup-db-file "[PATH]/pylookup.db")
+(setq pylookup-program (concat pylookup-dir "/pylookup.py"))
+(setq pylookup-db-file (concat pylookup-dir "/pylookup.db"))
 
 ;; to speedup, just load it on demand
 (autoload 'pylookup-lookup "pylookup"

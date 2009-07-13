@@ -108,7 +108,7 @@ if __name__ == "__main__":
         # trim
         opts.url = opts.url if opts.url[-1] == "/" else opts.url + "/"
 
-        print "Wait for a few second (Fetching htmls from '%s'" % sopts.url
+        print "Wait for a few second (Fetching htmls from '%s'" % opts.url
 
         try:
             index = urllib.urlopen( opts.url + "genindex-all.html" ).read()
