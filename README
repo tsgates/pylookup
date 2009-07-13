@@ -41,16 +41,6 @@
 
 <SEARCHING LOCAL HTML>
 
-Using pre-indexed database (simple)
-
-1. download "python-2.6.2-docs-html.zip"  
-   from "http://docs.python.org/download.html"
-   and extract under "pylookup/python-2.6.2-docs-html"
-
-2. cp pylookup-local.db pylookup.db
-
-or
-
 Index the database by yourself
 
 1. download any versions of documents from 'http://docs.python.org'
