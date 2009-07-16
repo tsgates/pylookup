@@ -45,7 +45,7 @@
 (put 'pylookup-mode 'mode-class 'special)
 
 (defvar pylookup-completing-read 
-  (if (null 'ido-mode) 'ido-completing-read 'completing-read)
+  (if (null ido-mode) 'completing-read 'ido-completing-read)
   "Ido support with convenience")
 
 ;;=================================================================
