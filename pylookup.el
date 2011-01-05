@@ -252,9 +252,10 @@
                   pylookup-html-locations)))
   
   ;; pylookup.py -d /home/myuser/.pylookup/pylookup.db -l <URL>
-  (call-process pylookup-program nil standard-output nil 
-                       "-d" (expand-file-name pylookup-db-file) 
-               "-l" src))
+  (message (with-output-to-string
+             (call-process pylookup-program nil standard-output nil
+                  "-u" src
+                  "-d" (expand-file-name pylookup-db-file)))))
 
 (provide 'pylookup)
 ;;; pylookup.el ends here
