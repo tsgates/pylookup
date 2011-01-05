@@ -30,7 +30,9 @@
     (define-key map "f"        'pylookup-mode-lookup)
     (define-key map "q"        'pylookup-mode-quit-window)
     (define-key map "n"        'pylookup-mode-next-line)
+    (define-key map "j"        'pylookup-mode-next-line)
     (define-key map "p"        'pylookup-move-prev-line)
+    (define-key map "k"        'pylookup-move-prev-line)
 
     (define-key map "v"        'scroll-down)
     (define-key map "V"        'scroll-up)
