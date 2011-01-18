@@ -1,6 +1,4 @@
 *~
 *.elc
-/*.db
 /*.zip
-/*-html
 /makefile

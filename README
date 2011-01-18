@@ -44,4 +44,4 @@
 Index the database by yourself
 
 1. download any versions of documents from 'http://docs.python.org'
-2. indexing by typing './pylookup.py -u file:///home/... [absolute path]'
+2. indexing by typing './pylookup.py -u python-2.7.1-docs-html'

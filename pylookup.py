@@ -7,8 +7,14 @@ Pylookup adopts most of ideas from haddoc, lovely toolkit by Martin Blais.
 
 debug = False
 
-import os, re, anydbm, urllib, htmllib, formatter
-from os.path import join, dirname, exists
+import os
+import re
+import anydbm
+import urllib
+import htmllib
+import formatter
+
+from os.path import join, dirname, exists, abspath
 
 class IndexProcessor( htmllib.HTMLParser ):
     """
@@ -91,24 +97,25 @@ if __name__ == "__main__":
     parser.add_option( "-d", "--db", dest="db", default="pylookup.db" )
     parser.add_option( "-l", "--lookup", dest="key" )
     parser.add_option( "-u", "--update", dest="url" )
-    parser.add_option( "-c", "--cache", action="store_true", default=False, dest="cache")
+    parser.add_option( "-c", "--cache" , action="store_true", default=False, dest="cache")
 
     ( opts, args ) = parser.parse_args()
 
     # create db
     try:
         db = anydbm.open( opts.db, 'c' )
-        
     except anydbm.error :
         raise SystemExit( "Error: Cannot access DB files" )
 
     # update
     if opts.url :
-
+        # create new db
+        db = anydbm.open( opts.db, 'n' )
+        
         # trim
         opts.url = opts.url if opts.url[-1] == "/" else opts.url + "/"
 
-        print "Wait for a few second (Fetching htmls from '%s'" % opts.url
+        print "Wait for a few second (Fetching htmls from '%s')" % opts.url
 
         try:
             index = urllib.urlopen( opts.url + "genindex-all.html" ).read()
@@ -147,6 +154,9 @@ if __name__ == "__main__":
         results.sort()
 
         for key, url in results :
+            # adjust url if not url
+            if not url.startswith("http"):
+                url = "file://" + abspath(join(dirname(__file__), url))
             print '%s;%s' % ( key, url )
 
     db.close()
