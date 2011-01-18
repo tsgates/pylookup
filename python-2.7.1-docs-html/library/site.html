@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>27.14. site — Site-specific configuration hook &mdash; Python v2.7.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.7.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Python v2.7.1 documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Python v2.7.1 documentation" href="../index.html" />
+    <link rel="up" title="27. Python Runtime Services" href="python.html" />
+    <link rel="next" title="27.15. user — User-specific configuration hook" href="user.html" />
+    <link rel="prev" title="27.13. inspect — Inspect live objects" href="inspect.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="user.html" title="27.15. user — User-specific configuration hook"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="inspect.html" title="27.13. inspect — Inspect live objects"
+             accesskey="P">previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" >The Python Standard Library</a> &raquo;</li>
+          <li><a href="python.html" accesskey="U">27. Python Runtime Services</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-site">
+<h1>27.14. <tt class="xref docutils literal"><span class="pre">site</span></tt> &#8212; Site-specific configuration hook<a class="headerlink" href="#module-site" title="Permalink to this headline">¶</a></h1>
+<p><strong>This module is automatically imported during initialization.</strong> The automatic
+import can be suppressed using the interpreter&#8217;s <em class="xref">-S</em> option.</p>
+<p id="index-571">Importing this module will append site-specific paths to the module search path.</p>
+<p id="index-572">It starts by constructing up to four directories from a head and a tail part.
+For the head part, it uses <tt class="docutils literal"><span class="pre">sys.prefix</span></tt> and <tt class="docutils literal"><span class="pre">sys.exec_prefix</span></tt>; empty heads
+are skipped.  For the tail part, it uses the empty string and then
+<tt class="docutils literal"><span class="pre">lib/site-packages</span></tt> (on Windows) or
+<tt class="docutils literal"><span class="pre">lib/python|version|/site-packages</span></tt> and then <tt class="docutils literal"><span class="pre">lib/site-python</span></tt> (on
+Unix and Macintosh).  For each of the distinct head-tail combinations, it sees
+if it refers to an existing directory, and if so, adds it to <tt class="docutils literal"><span class="pre">sys.path</span></tt> and
+also inspects the newly added path for configuration files.</p>
+<p>A path configuration file is a file whose name has the form <tt class="docutils literal"><span class="pre">package.pth</span></tt>
+and exists in one of the four directories mentioned above; its contents are
+additional items (one per line) to be added to <tt class="docutils literal"><span class="pre">sys.path</span></tt>.  Non-existing items
+are never added to <tt class="docutils literal"><span class="pre">sys.path</span></tt>, but no check is made that the item refers to a
+directory (rather than a file).  No item is added to <tt class="docutils literal"><span class="pre">sys.path</span></tt> more than
+once.  Blank lines and lines beginning with <tt class="docutils literal"><span class="pre">#</span></tt> are skipped.  Lines starting
+with <tt class="docutils literal"><span class="pre">import</span></tt> (followed by space or tab) are executed.</p>
+<p class="versionchanged">
+<span class="versionmodified">Changed in version 2.6: </span>A space or tab is now required after the import keyword.</p>
+<p id="index-573">For example, suppose <tt class="docutils literal"><span class="pre">sys.prefix</span></tt> and <tt class="docutils literal"><span class="pre">sys.exec_prefix</span></tt> are set to
+<tt class="docutils literal"><span class="pre">/usr/local</span></tt>.  The Python X.Y library is then installed in
+<tt class="docutils literal"><span class="pre">/usr/local/lib/python</span><em><span class="pre">X.Y</span></em></tt> (where only the first three characters of
+<tt class="docutils literal"><span class="pre">sys.version</span></tt> are used to form the installation path name).  Suppose this has
+a subdirectory <tt class="docutils literal"><span class="pre">/usr/local/lib/python</span><em><span class="pre">X.Y</span></em><span class="pre">/site-packages</span></tt> with three
+subsubdirectories, <tt class="docutils literal"><span class="pre">foo</span></tt>, <tt class="docutils literal"><span class="pre">bar</span></tt> and <tt class="docutils literal"><span class="pre">spam</span></tt>, and two path
+configuration files, <tt class="docutils literal"><span class="pre">foo.pth</span></tt> and <tt class="docutils literal"><span class="pre">bar.pth</span></tt>.  Assume
+<tt class="docutils literal"><span class="pre">foo.pth</span></tt> contains the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># foo package configuration</span>
+
+<span class="n">foo</span>
+<span class="n">bar</span>
+<span class="n">bletch</span>
+</pre></div>
+</div>
+<p>and <tt class="docutils literal"><span class="pre">bar.pth</span></tt> contains:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># bar package configuration</span>
+
+<span class="n">bar</span>
+</pre></div>
+</div>
+<p>Then the following version-specific directories are added to
+<tt class="docutils literal"><span class="pre">sys.path</span></tt>, in this order:</p>
+<div class="highlight-python"><pre>/usr/local/lib/pythonX.Y/site-packages/bar
+/usr/local/lib/pythonX.Y/site-packages/foo</pre>
+</div>
+<p>Note that <tt class="docutils literal"><span class="pre">bletch</span></tt> is omitted because it doesn&#8217;t exist; the <tt class="docutils literal"><span class="pre">bar</span></tt>
+directory precedes the <tt class="docutils literal"><span class="pre">foo</span></tt> directory because <tt class="docutils literal"><span class="pre">bar.pth</span></tt> comes
+alphabetically before <tt class="docutils literal"><span class="pre">foo.pth</span></tt>; and <tt class="docutils literal"><span class="pre">spam</span></tt> is omitted because it is
+not mentioned in either path configuration file.</p>
+<p id="index-574">After these path manipulations, an attempt is made to import a module named
+<tt class="xref docutils literal"><span class="pre">sitecustomize</span></tt>, which can perform arbitrary site-specific customizations.
+If this import fails with an <a title="exceptions.ImportError" class="reference external" href="exceptions.html#exceptions.ImportError"><tt class="xref docutils literal"><span class="pre">ImportError</span></tt></a> exception, it is silently
+ignored.</p>
+<p id="index-575">Note that for some non-Unix systems, <tt class="docutils literal"><span class="pre">sys.prefix</span></tt> and <tt class="docutils literal"><span class="pre">sys.exec_prefix</span></tt> are
+empty, and the path manipulations are skipped; however the import of
+<tt class="xref docutils literal"><span class="pre">sitecustomize</span></tt> is still attempted.</p>
+<dl class="data">
+<dt id="site.PREFIXES">
+<tt class="descclassname">site.</tt><tt class="descname">PREFIXES</tt><a class="headerlink" href="#site.PREFIXES" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of prefixes for site package directories</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="site.ENABLE_USER_SITE">
+<tt class="descclassname">site.</tt><tt class="descname">ENABLE_USER_SITE</tt><a class="headerlink" href="#site.ENABLE_USER_SITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag showing the status of the user site directory. True means the
+user site directory is enabled and added to sys.path. When the flag
+is None the user site directory is disabled for security reasons.</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="site.USER_SITE">
+<tt class="descclassname">site.</tt><tt class="descname">USER_SITE</tt><a class="headerlink" href="#site.USER_SITE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the user site directory for the current Python version or None</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="site.USER_BASE">
+<tt class="descclassname">site.</tt><tt class="descname">USER_BASE</tt><a class="headerlink" href="#site.USER_BASE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the base directory for user site directories</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="envvar">
+<dt id="envvar-PYTHONNOUSERSITE">
+<tt class="descname">PYTHONNOUSERSITE</tt><a class="headerlink" href="#envvar-PYTHONNOUSERSITE" title="Permalink to this definition">¶</a></dt>
+<dd><p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="envvar">
+<dt id="envvar-PYTHONUSERBASE">
+<tt class="descname">PYTHONUSERBASE</tt><a class="headerlink" href="#envvar-PYTHONUSERBASE" title="Permalink to this definition">¶</a></dt>
+<dd><p class="versionadded">
+<span class="versionmodified">New in version 2.6.</span></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="site.addsitedir">
+<tt class="descclassname">site.</tt><tt class="descname">addsitedir</tt><big>(</big><em>sitedir</em>, <em>known_paths=None</em><big>)</big><a class="headerlink" href="#site.addsitedir" title="Permalink to this definition">¶</a></dt>
+<dd>Adds a directory to sys.path and processes its pth files.</dd></dl>
+
+<dl class="function">
+<dt id="site.getsitepackages">
+<tt class="descclassname">site.</tt><tt class="descname">getsitepackages</tt><big>(</big><big>)</big><a class="headerlink" href="#site.getsitepackages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list containing all global site-packages directories
+(and possibly site-python).</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.7.</span></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="site.getuserbase">
+<tt class="descclassname">site.</tt><tt class="descname">getuserbase</tt><big>(</big><big>)</big><a class="headerlink" href="#site.getuserbase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the &#8220;user base&#8221; directory path.</p>
+<p>The &#8220;user base&#8221; directory can be used to store data. If the global
+variable <tt class="docutils literal"><span class="pre">USER_BASE</span></tt> is not initialized yet, this function will also set
+it.</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.7.</span></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="site.getusersitepackages">
+<tt class="descclassname">site.</tt><tt class="descname">getusersitepackages</tt><big>(</big><big>)</big><a class="headerlink" href="#site.getusersitepackages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the user-specific site-packages directory path.</p>
+<p>If the global variable <tt class="docutils literal"><span class="pre">USER_SITE</span></tt> is not initialized yet, this
+function will also set it.</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 2.7.</span></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="inspect.html"
+                                  title="previous chapter">27.13. <tt class="docutils literal docutils literal docutils literal"><span class="pre">inspect</span></tt> &#8212; Inspect live objects</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="user.html"
+                                  title="next chapter">27.15. <tt class="docutils literal docutils literal"><span class="pre">user</span></tt> &#8212; User-specific configuration hook</a></p>
+<h3>This Page</h3>
+<ul class="this-page-menu">
+  <li><a href="../bugs.html">Report a Bug</a></li>
+  <li><a href="../_sources/library/site.txt"
+         rel="nofollow">Show Source</a></li>
+</ul>
+
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="user.html" title="27.15. user — User-specific configuration hook"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="inspect.html" title="27.13. inspect — Inspect live objects"
+             >previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" >The Python Standard Library</a> &raquo;</li>
+          <li><a href="python.html" >27. Python Runtime Services</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+    &copy; <a href="../copyright.html">Copyright</a> 1990-2011, Python Software Foundation.
+    <br />
+    The Python Software Foundation is a non-profit corporation.  
+    <a href="http://www.python.org/psf/donations/">Please donate.</a>
+    <br />
+    Last updated on Jan 04, 2011.
+    <a href="../bugs.html">Found a bug</a>?
+    <br />
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7.
+    </div>
+
+  </body>
+</html>

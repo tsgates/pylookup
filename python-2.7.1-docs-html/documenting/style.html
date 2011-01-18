@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. Style Guide &mdash; Python v2.7.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.7.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Python v2.7.1 documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Python v2.7.1 documentation" href="../index.html" />
+    <link rel="up" title="Documenting Python" href="index.html" />
+    <link rel="next" title="3. reStructuredText Primer" href="rest.html" />
+    <link rel="prev" title="1. Introduction" href="intro.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="rest.html" title="3. reStructuredText Primer"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="1. Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" accesskey="U">Documenting Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="style-guide">
+<h1>2. Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
+<p>The Python documentation should follow the <a class="reference external" href="http://developer.apple.com/mac/library/documentation/UserExperience/Conceptual/APStyleGuide/APSG_2009.pdf">Apple Publications Style Guide</a>
+wherever possible. This particular style guide was selected mostly because it
+seems reasonable and is easy to get online.</p>
+<p>Topics which are not covered in Apple&#8217;s style guide will be discussed in
+this document.</p>
+<p>All reST files use an indentation of 3 spaces.  The maximum line length is 80
+characters for normal text, but tables, deeply indented code samples and long
+links may extend beyond that.</p>
+<p>Make generous use of blank lines where applicable; they help grouping things
+together.</p>
+<p>A sentence-ending period may be followed by one or two spaces; while reST
+ignores the second space, it is customarily put in by some users, for example
+to aid Emacs&#8217; auto-fill mode.</p>
+<p>Footnotes are generally discouraged, though they may be used when they are the
+best way to present specific information. When a footnote reference is added at
+the end of the sentence, it should follow the sentence-ending punctuation. The
+reST markup should appear something like this:</p>
+<div class="highlight-rest"><div class="highlight"><pre>This sentence has a footnote reference. <span class="s">[#]_</span> This is the next sentence.
+</pre></div>
+</div>
+<p>Footnotes should be gathered at the end of a file, or if the file is very long,
+at the end of a section. The docutils will automatically create backlinks to
+the footnote reference.</p>
+<p>Footnotes may appear in the middle of sentences where appropriate.</p>
+<p>Many special names are used in the Python documentation, including the names of
+operating systems, programming languages, standards bodies, and the like. Most
+of these entities are not assigned any special markup, but the preferred
+spellings are given here to aid authors in maintaining the consistency of
+presentation in the Python documentation.</p>
+<p>Other terms and words deserve special mention as well; these conventions should
+be used to ensure consistency throughout the documentation:</p>
+<dl class="docutils">
+<dt>CPU</dt>
+<dd>For &#8220;central processing unit.&#8221; Many style guides say this should be spelled
+out on the first use (and if you must use it, do so!). For the Python
+documentation, this abbreviation should be avoided since there&#8217;s no
+reasonable way to predict which occurrence will be the first seen by the
+reader. It is better to use the word &#8220;processor&#8221; instead.</dd>
+<dt>POSIX</dt>
+<dd>The name assigned to a particular group of standards. This is always
+uppercase.</dd>
+<dt>Python</dt>
+<dd>The name of our favorite programming language is always capitalized.</dd>
+<dt>Unicode</dt>
+<dd>The name of a character set and matching encoding. This is always written
+capitalized.</dd>
+<dt>Unix</dt>
+<dd>The name of the operating system developed at AT&amp;T Bell Labs in the early
+1970s.</dd>
+</dl>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="intro.html"
+                                  title="previous chapter">1. Introduction</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="rest.html"
+                                  title="next chapter">3. reStructuredText Primer</a></p>
+<h3>This Page</h3>
+<ul class="this-page-menu">
+  <li><a href="../bugs.html">Report a Bug</a></li>
+  <li><a href="../_sources/documenting/style.txt"
+         rel="nofollow">Show Source</a></li>
+</ul>
+
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="rest.html" title="3. reStructuredText Primer"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="1. Introduction"
+             >previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" >Documenting Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+    &copy; <a href="../copyright.html">Copyright</a> 1990-2011, Python Software Foundation.
+    <br />
+    The Python Software Foundation is a non-profit corporation.  
+    <a href="http://www.python.org/psf/donations/">Please donate.</a>
+    <br />
+    Last updated on Jan 04, 2011.
+    <a href="../bugs.html">Found a bug</a>?
+    <br />
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7.
+    </div>
+
+  </body>
+</html>

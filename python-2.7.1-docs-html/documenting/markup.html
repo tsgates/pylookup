@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. Additional Markup Constructs &mdash; Python v2.7.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.7.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Python v2.7.1 documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="Python v2.7.1 documentation" href="../index.html" />
+    <link rel="up" title="Documenting Python" href="index.html" />
+    <link rel="next" title="5. Differences to the LaTeX markup" href="fromlatex.html" />
+    <link rel="prev" title="3. reStructuredText Primer" href="rest.html" />
+    <link rel="shortcut icon" type="image/png" href="../_static/py.png" />
+ 
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="fromlatex.html" title="5. Differences to the LaTeX markup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="rest.html" title="3. reStructuredText Primer"
+             accesskey="P">previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" accesskey="U">Documenting Python</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="additional-markup-constructs">
+<h1>4. Additional Markup Constructs<a class="headerlink" href="#additional-markup-constructs" title="Permalink to this headline">¶</a></h1>
+<p>Sphinx adds a lot of new directives and interpreted text roles to standard reST
+markup.  This section contains the reference material for these facilities.
+Documentation for &#8220;standard&#8221; reST constructs is not included here, though
+they are used in the Python documentation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is just an overview of Sphinx&#8217; extended markup capabilities; full
+coverage can be found in <a class="reference external" href="http://sphinx.pocoo.org/contents.html">its own documentation</a>.</p>
+</div>
+<div class="section" id="meta-information-markup">
+<h2>4.1. Meta-information markup<a class="headerlink" href="#meta-information-markup" title="Permalink to this headline">¶</a></h2>
+<dl class="describe">
+<dt>
+<tt class="descname">sectionauthor</tt></dt>
+<dd><p>Identifies the author of the current section.  The argument should include
+the author&#8217;s name such that it can be used for presentation (though it isn&#8217;t)
+and email address.  The domain name portion of the address should be lower
+case.  Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">sectionauthor</span><span class="p">::</span> Guido van Rossum &lt;guido@python.org&gt;
+</pre></div>
+</div>
+<p>Currently, this markup isn&#8217;t reflected in the output in any way, but it helps
+keep track of contributions.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-specific-markup">
+<h2>4.2. Module-specific markup<a class="headerlink" href="#module-specific-markup" title="Permalink to this headline">¶</a></h2>
+<p>The markup described in this section is used to provide information about a
+module being documented.  Each module should be documented in its own file.
+Normally this markup appears after the title heading of that file; a typical
+file might start like this:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="gh">:mod:`parrot` -- Dead parrot access</span>
+<span class="gh">===================================</span>
+
+<span class="p">..</span> <span class="ow">module</span><span class="p">::</span> parrot
+   :platform: Unix, Windows
+   <span class="nc">:synopsis:</span> <span class="nf">Analyze and reanimate dead parrots.</span>
+<span class="p">..</span> <span class="ow">moduleauthor</span><span class="p">::</span> Eric Cleese &lt;eric@python.invalid&gt;
+<span class="p">..</span> <span class="ow">moduleauthor</span><span class="p">::</span> John Idle &lt;john@python.invalid&gt;
+</pre></div>
+</div>
+<p>As you can see, the module-specific markup consists of two directives, the
+<tt class="docutils literal"><span class="pre">module</span></tt> directive and the <tt class="docutils literal"><span class="pre">moduleauthor</span></tt> directive.</p>
+<dl class="describe">
+<dt>
+<tt class="descname">module</tt></dt>
+<dd><p>This directive marks the beginning of the description of a module (or package
+submodule, in which case the name should be fully qualified, including the
+package name).</p>
+<p>The <tt class="docutils literal"><span class="pre">platform</span></tt> option, if present, is a comma-separated list of the
+platforms on which the module is available (if it is available on all
+platforms, the option should be omitted).  The keys are short identifiers;
+examples that are in use include &#8220;IRIX&#8221;, &#8220;Mac&#8221;, &#8220;Windows&#8221;, and &#8220;Unix&#8221;.  It is
+important to use a key which has already been used when applicable.</p>
+<p>The <tt class="docutils literal"><span class="pre">synopsis</span></tt> option should consist of one sentence describing the
+module&#8217;s purpose &#8211; it is currently only used in the Global Module Index.</p>
+<p>The <tt class="docutils literal"><span class="pre">deprecated</span></tt> option can be given (with no value) to mark a module as
+deprecated; it will be designated as such in various locations then.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">moduleauthor</tt></dt>
+<dd>The <tt class="docutils literal"><span class="pre">moduleauthor</span></tt> directive, which can appear multiple times, names the
+authors of the module code, just like <tt class="docutils literal"><span class="pre">sectionauthor</span></tt> names the author(s)
+of a piece of documentation.  It too does not result in any output currently.</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is important to make the section title of a module-describing file
+meaningful since that value will be inserted in the table-of-contents trees
+in overview files.</p>
+</div>
+</div>
+<div class="section" id="information-units">
+<h2>4.3. Information units<a class="headerlink" href="#information-units" title="Permalink to this headline">¶</a></h2>
+<p>There are a number of directives used to describe specific features provided by
+modules.  Each directive requires one or more signatures to provide basic
+information about what is being described, and the content should be the
+description.  The basic version makes entries in the general index; if no index
+entry is desired, you can give the directive option flag <tt class="docutils literal"><span class="pre">:noindex:</span></tt>.  The
+following example shows all of the features of this directive type:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">function</span><span class="p">::</span> spam(eggs)
+              ham(eggs)
+   <span class="nc">:noindex:</span>
+
+   Spam or ham the foo.
+</pre></div>
+</div>
+<p>The signatures of object methods or data attributes should always include the
+type name (<tt class="docutils literal"><span class="pre">..</span> <span class="pre">method::</span> <span class="pre">FileInput.input(...)</span></tt>), even if it is obvious from the
+context which type they belong to; this is to enable consistent
+cross-references.  If you describe methods belonging to an abstract protocol,
+such as &#8220;context managers&#8221;, include a (pseudo-)type name too to make the
+index entries more informative.</p>
+<p>The directives are:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">cfunction</tt></dt>
+<dd><p>Describes a C function. The signature should be given as in C, e.g.:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">cfunction</span><span class="p">::</span> PyObject<span class="ge">* PyType_GenericAlloc(PyTypeObject *</span>type, Py_ssize_t nitems)
+</pre></div>
+</div>
+<p>This is also used to describe function-like preprocessor macros.  The names
+of the arguments should be given so they may be used in the description.</p>
+<p>Note that you don&#8217;t have to backslash-escape asterisks in the signature,
+as it is not parsed by the reST inliner.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cmember</tt></dt>
+<dd><p>Describes a C struct member. Example signature:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">cmember</span><span class="p">::</span> PyObject* PyTypeObject.tp_bases
+</pre></div>
+</div>
+<p>The text of the description should include the range of values allowed, how
+the value should be interpreted, and whether the value can be changed.
+References to structure members in text should use the <tt class="docutils literal"><span class="pre">member</span></tt> role.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cmacro</tt></dt>
+<dd>Describes a &#8220;simple&#8221; C macro.  Simple macros are macros which are used
+for code expansion, but which do not take arguments so cannot be described as
+functions.  This is not to be used for simple constant definitions.  Examples
+of its use in the Python documentation include <a title="PyObject_HEAD" class="reference external" href="../c-api/structures.html#PyObject_HEAD"><tt class="xref docutils literal"><span class="pre">PyObject_HEAD</span></tt></a> and
+<a title="Py_BEGIN_ALLOW_THREADS" class="reference external" href="../c-api/init.html#Py_BEGIN_ALLOW_THREADS"><tt class="xref docutils literal"><span class="pre">Py_BEGIN_ALLOW_THREADS</span></tt></a>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">ctype</tt></dt>
+<dd>Describes a C type. The signature should just be the type name.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cvar</tt></dt>
+<dd><p>Describes a global C variable.  The signature should include the type, such
+as:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">cvar</span><span class="p">::</span> PyObject* PyClass_Type
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">data</tt></dt>
+<dd>Describes global data in a module, including both variables and values used
+as &#8220;defined constants.&#8221;  Class and object attributes are not documented
+using this environment.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">exception</tt></dt>
+<dd>Describes an exception class.  The signature can, but need not include
+parentheses with constructor arguments.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">function</tt></dt>
+<dd><p>Describes a module-level function.  The signature should include the
+parameters, enclosing optional parameters in brackets.  Default values can be
+given if it enhances clarity.  For example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">function</span><span class="p">::</span> Timer.repeat([repeat=3[, number=1000000]])
+</pre></div>
+</div>
+<p>Object methods are not documented using this directive. Bound object methods
+placed in the module namespace as part of the public interface of the module
+are documented using this, as they are equivalent to normal functions for
+most purposes.</p>
+<p>The description should include information about the parameters required and
+how they are used (especially whether mutable objects passed as parameters
+are modified), side effects, and possible exceptions.  A small example may be
+provided.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">class</tt></dt>
+<dd>Describes a class.  The signature can include parentheses with parameters
+which will be shown as the constructor arguments.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">attribute</tt></dt>
+<dd>Describes an object data attribute.  The description should include
+information about the type of the data to be expected and whether it may be
+changed directly.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">method</tt></dt>
+<dd>Describes an object method.  The parameters should not include the <tt class="docutils literal"><span class="pre">self</span></tt>
+parameter.  The description should include similar information to that
+described for <tt class="docutils literal"><span class="pre">function</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">opcode</tt></dt>
+<dd>Describes a Python <a class="reference external" href="../glossary.html#term-bytecode"><em class="xref">bytecode</em></a> instruction.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cmdoption</tt></dt>
+<dd><p>Describes a Python command line option or switch.  Option argument names
+should be enclosed in angle brackets.  Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">cmdoption</span><span class="p">::</span> -m &lt;module&gt;
+
+   Run a module as a script.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">envvar</tt></dt>
+<dd>Describes an environment variable that Python uses or defines.</dd></dl>
+
+<p>There is also a generic version of these directives:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">describe</tt></dt>
+<dd><p>This directive produces the same formatting as the specific ones explained
+above but does not create index entries or cross-referencing targets.  It is
+used, for example, to describe the directives in this document. Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">describe</span><span class="p">::</span> opcode
+
+   Describes a Python bytecode instruction.
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="showing-code-examples">
+<h2>4.4. Showing code examples<a class="headerlink" href="#showing-code-examples" title="Permalink to this headline">¶</a></h2>
+<p>Examples of Python source code or interactive sessions are represented using
+standard reST literal blocks.  They are started by a <tt class="docutils literal"><span class="pre">::</span></tt> at the end of the
+preceding paragraph and delimited by indentation.</p>
+<p>Representing an interactive session requires including the prompts and output
+along with the Python code.  No special markup is required for interactive
+sessions.  After the last line of input or output presented, there should not be
+an &#8220;unused&#8221; primary prompt; this is an example of what <em>not</em> to do:</p>
+<div class="highlight-rest"><div class="highlight"><pre>&gt;&gt;&gt; 1 + 1
+2
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<p>Syntax highlighting is handled in a smart way:</p>
+<ul>
+<li><p class="first">There is a &#8220;highlighting language&#8221; for each source file.  Per default,
+this is <tt class="docutils literal"><span class="pre">'python'</span></tt> as the majority of files will have to highlight Python
+snippets.</p>
+</li>
+<li><p class="first">Within Python highlighting mode, interactive sessions are recognized
+automatically and highlighted appropriately.</p>
+</li>
+<li><p class="first">The highlighting language can be changed using the <tt class="docutils literal"><span class="pre">highlightlang</span></tt>
+directive, used as follows:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">highlightlang</span><span class="p">::</span> c
+</pre></div>
+</div>
+<p>This language is used until the next <tt class="docutils literal"><span class="pre">highlightlang</span></tt> directive is
+encountered.</p>
+</li>
+<li><p class="first">The values normally used for the highlighting language are:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">python</span></tt> (the default)</li>
+<li><tt class="docutils literal"><span class="pre">c</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">rest</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">none</span></tt> (no highlighting)</li>
+</ul>
+</li>
+<li><p class="first">If highlighting with the current language fails, the block is not highlighted
+in any way.</p>
+</li>
+</ul>
+<p>Longer displays of verbatim text may be included by storing the example text in
+an external file containing only plain text.  The file may be included using the
+<tt class="docutils literal"><span class="pre">literalinclude</span></tt> directive. <a class="footnote-reference" href="#id2" id="id1">[1]</a> For example, to include the Python source file
+<tt class="docutils literal"><span class="pre">example.py</span></tt>, use:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> example.py
+</pre></div>
+</div>
+<p>The file name is relative to the current file&#8217;s path.  Documentation-specific
+include files should be placed in the <tt class="docutils literal"><span class="pre">Doc/includes</span></tt> subdirectory.</p>
+</div>
+<div class="section" id="inline-markup">
+<h2>4.5. Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<p>As said before, Sphinx uses interpreted text roles to insert semantic markup in
+documents.</p>
+<p>Names of local variables, such as function/method arguments, are an exception,
+they should be marked simply with <tt class="docutils literal"><span class="pre">*var*</span></tt>.</p>
+<p>For all other roles, you have to write <tt class="docutils literal"><span class="pre">:rolename:`content`</span></tt>.</p>
+<p>There are some additional facilities that make cross-referencing roles more
+versatile:</p>
+<ul>
+<li><p class="first">You may supply an explicit title and reference target, like in reST direct
+hyperlinks: <tt class="docutils literal"><span class="pre">:role:`title</span> <span class="pre">&lt;target&gt;`</span></tt> will refer to <em>target</em>, but the link
+text will be <em>title</em>.</p>
+</li>
+<li><p class="first">If you prefix the content with <tt class="docutils literal"><span class="pre">!</span></tt>, no reference/hyperlink will be created.</p>
+</li>
+<li><p class="first">For the Python object roles, if you prefix the content with <tt class="docutils literal"><span class="pre">~</span></tt>, the link
+text will only be the last component of the target.  For example,
+<tt class="docutils literal"><span class="pre">:meth:`~Queue.Queue.get`</span></tt> will refer to <tt class="docutils literal"><span class="pre">Queue.Queue.get</span></tt> but only
+display <tt class="docutils literal"><span class="pre">get</span></tt> as the link text.</p>
+<p>In HTML output, the link&#8217;s <tt class="docutils literal"><span class="pre">title</span></tt> attribute (that is e.g. shown as a
+tool-tip on mouse-hover) will always be the full target name.</p>
+</li>
+</ul>
+<p>The following roles refer to objects in modules and are possibly hyperlinked if
+a matching identifier is found:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">mod</tt></dt>
+<dd>The name of a module; a dotted name may be used.  This should also be used for
+package names.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">func</tt></dt>
+<dd>The name of a Python function; dotted names may be used.  The role text
+should not include trailing parentheses to enhance readability.  The
+parentheses are stripped when searching for identifiers.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">data</tt></dt>
+<dd>The name of a module-level variable or constant.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">const</tt></dt>
+<dd>The name of a &#8220;defined&#8221; constant.  This may be a C-language <tt class="docutils literal"><span class="pre">#define</span></tt>
+or a Python variable that is not intended to be changed.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">class</tt></dt>
+<dd>A class name; a dotted name may be used.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">meth</tt></dt>
+<dd>The name of a method of an object.  The role text should include the type
+name and the method name.  A dotted name may be used.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">attr</tt></dt>
+<dd>The name of a data attribute of an object.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">exc</tt></dt>
+<dd>The name of an exception. A dotted name may be used.</dd></dl>
+
+<p>The name enclosed in this markup can include a module name and/or a class name.
+For example, <tt class="docutils literal"><span class="pre">:func:`filter`</span></tt> could refer to a function named <tt class="docutils literal"><span class="pre">filter</span></tt> in
+the current module, or the built-in function of that name.  In contrast,
+<tt class="docutils literal"><span class="pre">:func:`foo.filter`</span></tt> clearly refers to the <tt class="docutils literal"><span class="pre">filter</span></tt> function in the <tt class="docutils literal"><span class="pre">foo</span></tt>
+module.</p>
+<p>Normally, names in these roles are searched first without any further
+qualification, then with the current module name prepended, then with the
+current module and class name (if any) prepended.  If you prefix the name with a
+dot, this order is reversed.  For example, in the documentation of the
+<a title="Encode and decode data and streams." class="reference external" href="../library/codecs.html#module-codecs"><tt class="xref docutils literal"><span class="pre">codecs</span></tt></a> module, <tt class="docutils literal"><span class="pre">:func:`open`</span></tt> always refers to the built-in function,
+while <tt class="docutils literal"><span class="pre">:func:`.open`</span></tt> refers to <a title="codecs.open" class="reference external" href="../library/codecs.html#codecs.open"><tt class="xref docutils literal"><span class="pre">codecs.open()</span></tt></a>.</p>
+<p>A similar heuristic is used to determine whether the name is an attribute of
+the currently documented class.</p>
+<p>The following roles create cross-references to C-language constructs if they
+are defined in the API documentation:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">cdata</tt></dt>
+<dd>The name of a C-language variable.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cfunc</tt></dt>
+<dd>The name of a C-language function. Should include trailing parentheses.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">cmacro</tt></dt>
+<dd>The name of a &#8220;simple&#8221; C macro, as defined above.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">ctype</tt></dt>
+<dd>The name of a C-language type.</dd></dl>
+
+<p>The following role does possibly create a cross-reference, but does not refer
+to objects:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">token</tt></dt>
+<dd>The name of a grammar token (used in the reference manual to create links
+between production displays).</dd></dl>
+
+<p>The following role creates a cross-reference to the term in the glossary:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">term</tt></dt>
+<dd><p>Reference to a term in the glossary.  The glossary is created using the
+<tt class="docutils literal"><span class="pre">glossary</span></tt> directive containing a definition list with terms and
+definitions.  It does not have to be in the same file as the <tt class="docutils literal"><span class="pre">term</span></tt>
+markup, in fact, by default the Python docs have one global glossary
+in the <tt class="docutils literal"><span class="pre">glossary.rst</span></tt> file.</p>
+<p>If you use a term that&#8217;s not explained in a glossary, you&#8217;ll get a warning
+during build.</p>
+</dd></dl>
+
+<hr class="docutils" />
+<p>The following roles don&#8217;t do anything special except formatting the text
+in a different style:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">command</tt></dt>
+<dd>The name of an OS-level command, such as <tt class="docutils literal"><span class="pre">rm</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">dfn</tt></dt>
+<dd>Mark the defining instance of a term in the text.  (No index entries are
+generated.)</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">envvar</tt></dt>
+<dd>An environment variable.  Index entries are generated.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">file</tt></dt>
+<dd><p>The name of a file or directory.  Within the contents, you can use curly
+braces to indicate a &#8220;variable&#8221; part, for example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="cp">... is installed in :file:`/usr/lib/python2.{x}/site-packages` ...</span>
+</pre></div>
+</div>
+<p>In the built documentation, the <tt class="docutils literal"><span class="pre">x</span></tt> will be displayed differently to
+indicate that it is to be replaced by the Python minor version.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">guilabel</tt></dt>
+<dd>Labels presented as part of an interactive user interface should be marked
+using <tt class="docutils literal"><span class="pre">guilabel</span></tt>.  This includes labels from text-based interfaces such as
+those created using <a title="(Unix) An interface to the curses library, providing portable terminal handling." class="reference external" href="../library/curses.html#module-curses"><tt class="xref docutils literal"><span class="pre">curses</span></tt></a> or other text-based libraries.  Any label
+used in the interface should be marked with this role, including button
+labels, window titles, field names, menu and menu selection names, and even
+values in selection lists.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">kbd</tt></dt>
+<dd>Mark a sequence of keystrokes.  What form the key sequence takes may depend
+on platform- or application-specific conventions.  When there are no relevant
+conventions, the names of modifier keys should be spelled out, to improve
+accessibility for new users and non-native speakers.  For example, an
+<em>xemacs</em> key sequence may be marked like <tt class="docutils literal"><span class="pre">:kbd:`C-x</span> <span class="pre">C-f`</span></tt>, but without
+reference to a specific application or platform, the same sequence should be
+marked as <tt class="docutils literal"><span class="pre">:kbd:`Control-x</span> <span class="pre">Control-f`</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">keyword</tt></dt>
+<dd>The name of a keyword in Python.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">mailheader</tt></dt>
+<dd>The name of an RFC 822-style mail header.  This markup does not imply that
+the header is being used in an email message, but can be used to refer to any
+header of the same &#8220;style.&#8221;  This is also used for headers defined by the
+various MIME specifications.  The header name should be entered in the same
+way it would normally be found in practice, with the camel-casing conventions
+being preferred where there is more than one common usage. For example:
+<tt class="docutils literal"><span class="pre">:mailheader:`Content-Type`</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">makevar</tt></dt>
+<dd>The name of a <strong>make</strong> variable.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">manpage</tt></dt>
+<dd>A reference to a Unix manual page including the section,
+e.g. <tt class="docutils literal"><span class="pre">:manpage:`ls(1)`</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">menuselection</tt></dt>
+<dd><p>Menu selections should be marked using the <tt class="docutils literal"><span class="pre">menuselection</span></tt> role.  This is
+used to mark a complete sequence of menu selections, including selecting
+submenus and choosing a specific operation, or any subsequence of such a
+sequence.  The names of individual selections should be separated by
+<tt class="docutils literal"><span class="pre">--&gt;</span></tt>.</p>
+<p>For example, to mark the selection &#8220;Start &gt; Programs&#8221;, use this markup:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="na">:menuselection:</span><span class="nv">`Start --&gt; Programs`</span>
+</pre></div>
+</div>
+<p>When including a selection that includes some trailing indicator, such as the
+ellipsis some operating systems use to indicate that the command opens a
+dialog, the indicator should be omitted from the selection name.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">mimetype</tt></dt>
+<dd>The name of a MIME type, or a component of a MIME type (the major or minor
+portion, taken alone).</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">newsgroup</tt></dt>
+<dd>The name of a Usenet newsgroup.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">option</tt></dt>
+<dd>A command-line option of Python.  The leading hyphen(s) must be included.
+If a matching <tt class="docutils literal"><span class="pre">cmdoption</span></tt> directive exists, it is linked to.  For options
+of other programs or scripts, use simple <tt class="docutils literal"><span class="pre">``code``</span></tt> markup.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">program</tt></dt>
+<dd>The name of an executable program.  This may differ from the file name for
+the executable for some platforms.  In particular, the <tt class="docutils literal"><span class="pre">.exe</span></tt> (or other)
+extension should be omitted for Windows programs.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">regexp</tt></dt>
+<dd>A regular expression. Quotes should not be included.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">samp</tt></dt>
+<dd><p>A piece of literal text, such as code.  Within the contents, you can use
+curly braces to indicate a &#8220;variable&#8221; part, as in <tt class="docutils literal"><span class="pre">:file:</span></tt>.</p>
+<p>If you don&#8217;t need the &#8220;variable part&#8221; indication, use the standard
+<tt class="docutils literal"><span class="pre">``code``</span></tt> instead.</p>
+</dd></dl>
+
+<p>The following roles generate external links:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">pep</tt></dt>
+<dd>A reference to a Python Enhancement Proposal.  This generates appropriate
+index entries. The text &#8220;PEP <em>number</em>&#8221; is generated; in the HTML output,
+this text is a hyperlink to an online copy of the specified PEP.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">rfc</tt></dt>
+<dd>A reference to an Internet Request for Comments.  This generates appropriate
+index entries. The text &#8220;RFC <em>number</em>&#8221; is generated; in the HTML output,
+this text is a hyperlink to an online copy of the specified RFC.</dd></dl>
+
+<p>Note that there are no special roles for including hyperlinks as you can use
+the standard reST markup for that purpose.</p>
+</div>
+<div class="section" id="cross-linking-markup">
+<span id="doc-ref-role"></span><h2>4.6. Cross-linking markup<a class="headerlink" href="#cross-linking-markup" title="Permalink to this headline">¶</a></h2>
+<p>To support cross-referencing to arbitrary sections in the documentation, the
+standard reST labels are &#8220;abused&#8221; a bit: Every label must precede a section
+title; and every label name must be unique throughout the entire documentation
+source.</p>
+<p>You can then reference to these sections using the <tt class="docutils literal"><span class="pre">:ref:`label-name`</span></tt> role.</p>
+<p>Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _my-reference-label:</span>
+
+<span class="gh">Section to cross-reference</span>
+<span class="gh">--------------------------</span>
+
+This is the text of the section.
+
+It refers to the section itself, see <span class="na">:ref:</span><span class="nv">`my-reference-label`</span>.
+</pre></div>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">:ref:</span></tt> invocation is replaced with the section title.</p>
+</div>
+<div class="section" id="paragraph-level-markup">
+<h2>4.7. Paragraph-level markup<a class="headerlink" href="#paragraph-level-markup" title="Permalink to this headline">¶</a></h2>
+<p>These directives create short paragraphs and can be used inside information
+units as well as normal text:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">note</tt></dt>
+<dd><p>An especially important bit of information about an API that a user should be
+aware of when using whatever bit of API the note pertains to.  The content of
+the directive should be written in complete sentences and include all
+appropriate punctuation.</p>
+<p>Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">note</span><span class="p">::</span>
+
+   This function is not suitable for sending spam e-mails.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">warning</tt></dt>
+<dd>An important bit of information about an API that a user should be aware of
+when using whatever bit of API the warning pertains to.  The content of the
+directive should be written in complete sentences and include all appropriate
+punctuation.  In the interest of not scaring users away from pages filled
+with warnings, this directive should only be chosen over <tt class="docutils literal"><span class="pre">note</span></tt> for
+information regarding the possibility of crashes, data loss, or security
+implications.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">versionadded</tt></dt>
+<dd><p>This directive documents the version of Python which added the described
+feature to the library or C API. When this applies to an entire module, it
+should be placed at the top of the module section before any prose.</p>
+<p>The first argument must be given and is the version in question; you can add
+a second argument consisting of a <em>brief</em> explanation of the change.</p>
+<p>Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">versionadded</span><span class="p">::</span> 2.5
+   The <span class="ge">*spam*</span> parameter.
+</pre></div>
+</div>
+<p>Note that there must be no blank line between the directive head and the
+explanation; this is to make these blocks visually continuous in the markup.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">versionchanged</tt></dt>
+<dd>Similar to <tt class="docutils literal"><span class="pre">versionadded</span></tt>, but describes when and what changed in the named
+feature in some way (new parameters, changed side effects, etc.).</dd></dl>
+
+<hr class="docutils" />
+<dl class="describe">
+<dt>
+<tt class="descname">impl-detail</tt></dt>
+<dd><p>This directive is used to mark CPython-specific information.  Use either with
+a block content or a single sentence as an argument, i.e. either</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">impl-detail</span><span class="p">::</span>
+
+   This describes some implementation detail.
+
+   More explanation.
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">impl-detail</span><span class="p">::</span> This shortly mentions an implementation detail.
+</pre></div>
+</div>
+<p>&#8220;<strong>CPython implementation detail:</strong>&#8221; is automatically prepended to the
+content.</p>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">seealso</tt></dt>
+<dd><p>Many sections include a list of references to module documentation or
+external documents.  These lists are created using the <tt class="docutils literal"><span class="pre">seealso</span></tt> directive.</p>
+<p>The <tt class="docutils literal"><span class="pre">seealso</span></tt> directive is typically placed in a section just before any
+sub-sections.  For the HTML output, it is shown boxed off from the main flow
+of the text.</p>
+<p>The content of the <tt class="docutils literal"><span class="pre">seealso</span></tt> directive should be a reST definition list.
+Example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span>
+
+   Module <span class="na">:mod:</span><span class="nv">`zipfile`</span>
+      Documentation of the <span class="na">:mod:</span><span class="nv">`zipfile`</span> standard module.
+
+   <span class="s">`GNU tar manual, Basic Tar Format </span><span class="si">&lt;http://link&gt;</span><span class="s">`_</span>
+      Documentation for tar archive files, including GNU tar extensions.
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">rubric</tt></dt>
+<dd>This directive creates a paragraph heading that is not used to create a
+table of contents node.  It is currently used for the &#8220;Footnotes&#8221; caption.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">centered</tt></dt>
+<dd><p>This directive creates a centered boldfaced paragraph.  Use it as follows:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">centered</span><span class="p">::</span>
+
+   Paragraph contents.
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="table-of-contents-markup">
+<h2>4.8. Table-of-contents markup<a class="headerlink" href="#table-of-contents-markup" title="Permalink to this headline">¶</a></h2>
+<p>Since reST does not have facilities to interconnect several documents, or split
+documents into multiple output files, Sphinx uses a custom directive to add
+relations between the single files the documentation is made of, as well as
+tables of contents.  The <tt class="docutils literal"><span class="pre">toctree</span></tt> directive is the central element.</p>
+<dl class="describe">
+<dt>
+<tt class="descname">toctree</tt></dt>
+<dd><p>This directive inserts a &#8220;TOC tree&#8221; at the current location, using the
+individual TOCs (including &#8220;sub-TOC trees&#8221;) of the files given in the
+directive body.  A numeric <tt class="docutils literal"><span class="pre">maxdepth</span></tt> option may be given to indicate the
+depth of the tree; by default, all levels are included.</p>
+<p>Consider this example (taken from the library reference index):</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:maxdepth:</span> <span class="nf">2</span>
+
+   intro
+   strings
+   datatypes
+   numeric
+   (many more files listed here)
+</pre></div>
+</div>
+<p>This accomplishes two things:</p>
+<ul class="simple">
+<li>Tables of contents from all those files are inserted, with a maximum depth
+of two, that means one nested heading.  <tt class="docutils literal"><span class="pre">toctree</span></tt> directives in those
+files are also taken into account.</li>
+<li>Sphinx knows that the relative order of the files <tt class="docutils literal"><span class="pre">intro</span></tt>,
+<tt class="docutils literal"><span class="pre">strings</span></tt> and so forth, and it knows that they are children of the
+shown file, the library index.  From this information it generates &#8220;next
+chapter&#8221;, &#8220;previous chapter&#8221; and &#8220;parent chapter&#8221; links.</li>
+</ul>
+<p>In the end, all files included in the build process must occur in one
+<tt class="docutils literal"><span class="pre">toctree</span></tt> directive; Sphinx will emit a warning if it finds a file that is
+not included, because that means that this file will not be reachable through
+standard navigation.</p>
+<p>The special file <tt class="docutils literal"><span class="pre">contents.rst</span></tt> at the root of the source directory is the
+&#8220;root&#8221; of the TOC tree hierarchy; from it the &#8220;Contents&#8221; page is generated.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="index-generating-markup">
+<h2>4.9. Index-generating markup<a class="headerlink" href="#index-generating-markup" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx automatically creates index entries from all information units (like
+functions, classes or attributes) like discussed before.</p>
+<p>However, there is also an explicit directive available, to make the index more
+comprehensive and enable index entries in documents where information is not
+mainly contained in information units, such as the language reference.</p>
+<p>The directive is <tt class="docutils literal"><span class="pre">index</span></tt> and contains one or more index entries.  Each entry
+consists of a type and a value, separated by a colon.</p>
+<p>For example:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">index</span><span class="p">::</span>
+   single: execution; context
+   module: __main__
+   module: sys
+   triple: module; search; path
+</pre></div>
+</div>
+<p>This directive contains five entries, which will be converted to entries in the
+generated index which link to the exact location of the index statement (or, in
+case of offline media, the corresponding page number).</p>
+<p>The possible entry types are:</p>
+<dl class="docutils">
+<dt>single</dt>
+<dd>Creates a single index entry.  Can be made a subentry by separating the
+subentry text with a semicolon (this notation is also used below to describe
+what entries are created).</dd>
+<dt>pair</dt>
+<dd><tt class="docutils literal"><span class="pre">pair:</span> <span class="pre">loop;</span> <span class="pre">statement</span></tt> is a shortcut that creates two index entries,
+namely <tt class="docutils literal"><span class="pre">loop;</span> <span class="pre">statement</span></tt> and <tt class="docutils literal"><span class="pre">statement;</span> <span class="pre">loop</span></tt>.</dd>
+<dt>triple</dt>
+<dd>Likewise, <tt class="docutils literal"><span class="pre">triple:</span> <span class="pre">module;</span> <span class="pre">search;</span> <span class="pre">path</span></tt> is a shortcut that creates three
+index entries, which are <tt class="docutils literal"><span class="pre">module;</span> <span class="pre">search</span> <span class="pre">path</span></tt>, <tt class="docutils literal"><span class="pre">search;</span> <span class="pre">path,</span> <span class="pre">module</span></tt> and
+<tt class="docutils literal"><span class="pre">path;</span> <span class="pre">module</span> <span class="pre">search</span></tt>.</dd>
+<dt>module, keyword, operator, object, exception, statement, builtin</dt>
+<dd>These all create two index entries.  For example, <tt class="docutils literal"><span class="pre">module:</span> <span class="pre">hashlib</span></tt> creates
+the entries <tt class="docutils literal"><span class="pre">module;</span> <span class="pre">hashlib</span></tt> and <tt class="docutils literal"><span class="pre">hashlib;</span> <span class="pre">module</span></tt>.</dd>
+</dl>
+<p>For index directives containing only &#8220;single&#8221; entries, there is a shorthand
+notation:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">index</span><span class="p">::</span> BNF, grammar, syntax, notation
+</pre></div>
+</div>
+<p>This creates four index entries.</p>
+</div>
+<div class="section" id="grammar-production-displays">
+<h2>4.10. Grammar production displays<a class="headerlink" href="#grammar-production-displays" title="Permalink to this headline">¶</a></h2>
+<p>Special markup is available for displaying the productions of a formal grammar.
+The markup is simple and does not attempt to model all aspects of BNF (or any
+derived forms), but provides enough to allow context-free grammars to be
+displayed in a way that causes uses of a symbol to be rendered as hyperlinks to
+the definition of the symbol.  There is this directive:</p>
+<dl class="describe">
+<dt>
+<tt class="descname">productionlist</tt></dt>
+<dd><p>This directive is used to enclose a group of productions.  Each production is
+given on a single line and consists of a name, separated by a colon from the
+following definition.  If the definition spans multiple lines, each
+continuation line must begin with a colon placed at the same column as in the
+first line.</p>
+<p>Blank lines are not allowed within <tt class="docutils literal"><span class="pre">productionlist</span></tt> directive arguments.</p>
+<p>The definition can contain token names which are marked as interpreted text
+(e.g. <tt class="docutils literal"><span class="pre">unaryneg</span> <span class="pre">::=</span> <span class="pre">&quot;-&quot;</span> <span class="pre">`integer`</span></tt>) &#8211; this generates cross-references
+to the productions of these tokens.</p>
+<p>Note that no further reST parsing is done in the production, so that you
+don&#8217;t have to escape <tt class="docutils literal"><span class="pre">*</span></tt> or <tt class="docutils literal"><span class="pre">|</span></tt> characters.</p>
+</dd></dl>
+
+<p>The following is an example taken from the Python Reference Manual:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">productionlist</span><span class="p">::</span>
+   try_stmt: try1_stmt | try2_stmt
+   try1_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : (&quot;except&quot; [<span class="nv">`expression`</span> [&quot;,&quot; <span class="nv">`target`</span>]] &quot;:&quot; <span class="nv">`suite`</span>)+
+            : [&quot;else&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+            : [&quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+   try2_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : &quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="substitutions">
+<h2>4.11. Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h2>
+<p>The documentation system provides three substitutions that are defined by default.
+They are set in the build configuration file <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<dl class="describe">
+<dt>
+<tt class="descname">|release|</tt></dt>
+<dd>Replaced by the Python release the documentation refers to.  This is the full
+version string including alpha/beta/release candidate tags, e.g. <tt class="docutils literal"><span class="pre">2.5.2b3</span></tt>.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">|version|</tt></dt>
+<dd>Replaced by the Python version the documentation refers to. This consists
+only of the major and minor version parts, e.g. <tt class="docutils literal"><span class="pre">2.5</span></tt>, even for version
+2.5.1.</dd></dl>
+
+<dl class="describe">
+<dt>
+<tt class="descname">|today|</tt></dt>
+<dd>Replaced by either today&#8217;s date, or the date set in the build configuration
+file.  Normally has the format <tt class="docutils literal"><span class="pre">April</span> <span class="pre">14,</span> <span class="pre">2007</span></tt>.</dd></dl>
+
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>There is a standard <tt class="docutils literal"><span class="pre">..</span> <span class="pre">include</span></tt> directive, but it raises errors if the
+file is not found.  This one only emits a warning.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../contents.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="#">4. Additional Markup Constructs</a><ul>
+<li><a class="reference external" href="#meta-information-markup">4.1. Meta-information markup</a></li>
+<li><a class="reference external" href="#module-specific-markup">4.2. Module-specific markup</a></li>
+<li><a class="reference external" href="#information-units">4.3. Information units</a></li>
+<li><a class="reference external" href="#showing-code-examples">4.4. Showing code examples</a></li>
+<li><a class="reference external" href="#inline-markup">4.5. Inline markup</a></li>
+<li><a class="reference external" href="#cross-linking-markup">4.6. Cross-linking markup</a></li>
+<li><a class="reference external" href="#paragraph-level-markup">4.7. Paragraph-level markup</a></li>
+<li><a class="reference external" href="#table-of-contents-markup">4.8. Table-of-contents markup</a></li>
+<li><a class="reference external" href="#index-generating-markup">4.9. Index-generating markup</a></li>
+<li><a class="reference external" href="#grammar-production-displays">4.10. Grammar production displays</a></li>
+<li><a class="reference external" href="#substitutions">4.11. Substitutions</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="rest.html"
+                                  title="previous chapter">3. reStructuredText Primer</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="fromlatex.html"
+                                  title="next chapter">5. Differences to the LaTeX markup</a></p>
+<h3>This Page</h3>
+<ul class="this-page-menu">
+  <li><a href="../bugs.html">Report a Bug</a></li>
+  <li><a href="../_sources/documenting/markup.txt"
+         rel="nofollow">Show Source</a></li>
+</ul>
+
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="fromlatex.html" title="5. Differences to the LaTeX markup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="rest.html" title="3. reStructuredText Primer"
+             >previous</a> |</li>
+        <li><img src="../_static/py.png" alt=""
+                 style="vertical-align: middle; margin-top: -1px"/></li>
+        <li><a href="../index.html">Python v2.7.1 documentation</a> &raquo;</li>
+
+          <li><a href="index.html" >Documenting Python</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+    &copy; <a href="../copyright.html">Copyright</a> 1990-2011, Python Software Foundation.
+    <br />
+    The Python Software Foundation is a non-profit corporation.  
+    <a href="http://www.python.org/psf/donations/">Please donate.</a>
+    <br />
+    Last updated on Jan 04, 2011.
+    <a href="../bugs.html">Found a bug</a>?
+    <br />
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7.
+    </div>
+
+  </body>
+</html>
