@@ -45,3 +45,6 @@ Index the database by yourself
 
 1. download any versions of documents from 'http://docs.python.org'
 2. indexing by typing './pylookup.py -u python-2.7.1-docs-html'
+ (or './pylookup.py -u http://docs.python.org' if you want to access online doc)
+3. testing: './pylookup.py -l ljust' you should see some results, good luck
+
