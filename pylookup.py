@@ -11,6 +11,7 @@ import os
 import re
 import anydbm
 import urllib
+import urlparse
 import htmllib
 import formatter
 
@@ -113,6 +114,12 @@ if __name__ == "__main__":
         db = anydbm.open( opts.db, 'n' )
         
         # trim
+        parsed = urlparse.urlparse(opts.url)
+        if not parsed.scheme or parsed.scheme == "file":
+            opts.url = os.path.expanduser(parsed.path)
+        else:
+            opts.url = parsed.geturl()
+
         opts.url = opts.url if opts.url[-1] == "/" else opts.url + "/"
 
         print "Wait for a few second (Fetching htmls from '%s')" % opts.url
