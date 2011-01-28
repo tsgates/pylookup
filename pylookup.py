@@ -110,7 +110,7 @@ class IndexProcessor( htmllib.HTMLParser ):
 
             self.writer(e)
 
-def update(db, urls, append=True):
+def update(db, urls, append=False):
     """Update database with entries from urls.
 
     `db` : filename to database
