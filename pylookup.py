@@ -168,11 +168,12 @@ if __name__ == "__main__":
     parser.add_option( "-l", "--lookup", dest="key" )
     parser.add_option( "-u", "--update", action="append", type="str", dest="url" )
     parser.add_option( "-c", "--cache" , action="store_true", default=False, dest="cache")
+    parser.add_option( "-a", "--append" , action="store_true", default=False, dest="append") 
 
     ( opts, args ) = parser.parse_args()
 
     if opts.url:
-        update(opts.db, opts.url)
+        update(opts.db, opts.url, opts.append)
     # cache
 #     if opts.cache :
         
