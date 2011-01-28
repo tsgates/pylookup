@@ -17,6 +17,17 @@ import formatter
 
 from os.path import join, dirname, exists, abspath
 
+def build_book(s, num):
+    """
+    Build book identifier from `s`, with `num` links.
+    """
+    for matcher, replacement in (("library", "lib"),
+                                ("c-api", "api"),
+                                ("reference", "ref"),
+                                ("", "etc")):
+        if matcher in s:
+            return replacement if num == 1 else "%s/%d" % (replacement, num)
+
 class Element(object):
     def __init__(self, entry, desc, book, url):
         self.book = book
@@ -49,10 +60,10 @@ class IndexProcessor( htmllib.HTMLParser ):
     Extract the index links from a Python HTML documentation index.
     """
     
-    def __init__( self, db, dirn ):
+    def __init__( self, writer, dirn):
         htmllib.HTMLParser.__init__( self, formatter.NullFormatter() )
         
-        self.db         = db
+        self.writer     = writer
         self.dirn       = dirn
         self.entry      = ""
         self.desc       = ""
@@ -96,26 +107,11 @@ class IndexProcessor( htmllib.HTMLParser ):
                 self.desc = re.sub( "[()]", "", self.desc )
 
             self.num_of_a += 1
+            book = build_book(self.url, self.num_of_a)
+            e = Element(self.entry, self.desc, book, self.url)
 
-            # book : reference[ref]/c-api[api]/library[lib]/other[etc]
-            if self.url.find( "library" ) >= 0 :
-                book = "lib"
-            elif self.url.find( "c-api" ) >= 0 :
-                book = "api"
-            elif self.url.find( "reference" ) >= 0 :
-                book = "ref"
-            else :
-                book = "etc"
+            self.writer(e)
 
-            book = "[%s%s]" % ( book, "" if self.num_of_a == 1 else "/%d" % self.num_of_a )
-            key = "%s\t(%s)\t%s" % ( self.entry , self.desc, book )
-
-            if debug :
-                print "%s : %s" % ( key, self.url )
-
-            # store to db
-            self.db[ key ] = self.url
-        
 if __name__ == "__main__":
 
     import optparse
