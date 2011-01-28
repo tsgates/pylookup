@@ -22,6 +22,9 @@ import formatter
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
 
+EMACS_FORMAT = "%(entry)s\t(%(desc)s)\t[%(book)s];%(url)s"
+TERMINAL_FORMAT = "%(entry)s\t(%(desc)s)\t[%(book)s]\n%(url)s"
+
 def build_book(s, num):
     """
     Build book identifier from `s`, with `num` links.
@@ -40,9 +43,11 @@ class Element(object):
         self.desc = desc
         self.entry = entry
 
-    def __str__(self):
-        return "%s\t(%s)\t[%s];%s" % (self.entry, self.desc,
-                                      self.book, self.url)
+    def format(self, fstring):
+        return fstring % {'entry': self.entry,
+                          'desc' : self.desc,
+                          'book' : self.book,
+                          'url' : self.url }
 
     def match_insensitive(self, key):
         """
@@ -143,7 +148,7 @@ def update(db, urls, append=False):
             except IOError, e:
                 print "Error: fetching file from the web: '%s'" % e
 
-def lookup(db, key, out=sys.stdout, insensitive=True):
+def lookup(db, key, out=sys.stdout, insensitive=True, format=EMACS_FORMAT):
     """Lookup key from database and print to out.
     
     `db` : filename to database
@@ -162,7 +167,7 @@ def lookup(db, key, out=sys.stdout, insensitive=True):
             while True:
                 e = pickle.load(f)
                 if matcher(e, key):
-                    print >> out, e 
+                    print >> out, e.format(format) 
         except EOFError:
             pass
 
@@ -203,7 +208,10 @@ if __name__ == "__main__":
                        action="store_true", default=False, dest="cache")
     parser.add_option( "-a", "--append", 
                        help="append to the db from multiple sources",
-                       action="store_true", default=False, dest="append") 
+                       action="store_true", default=False, dest="append")
+    parser.add_option( "-f", "--format",
+                       help="type of output formatting, valid: Emacs, Terminal",
+                       default="Emacs", dest="format")
 
     ( opts, args ) = parser.parse_args()
 
@@ -214,4 +222,6 @@ if __name__ == "__main__":
         cache(opts.db)
 
     if opts.key:
-        lookup(opts.db, opts.key)
+        format = TERMINAL_FORMAT if opts.format.lower() == "terminal"\
+                                  else EMACS_FORMAT
+        lookup(opts.db, opts.key, format=format)
