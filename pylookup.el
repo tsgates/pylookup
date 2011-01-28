@@ -244,7 +244,7 @@
          (shrink-window-if-larger-than-buffer (get-buffer-window tmpbuf)))))))
 
 ;;;###autoload
-(defun pylookup-update (src)
+(defun pylookup-update (src &optional append)
   "Run pylookup-update and create the database at `pylookup-db-file'."
   (interactive 
    (list (funcall pylookup-completing-read
@@ -255,7 +255,16 @@
   (message (with-output-to-string
              (call-process pylookup-program nil standard-output nil
                   "-u" src
-                  "-d" (expand-file-name pylookup-db-file)))))
+                  "-d" (expand-file-name pylookup-db-file)
+                  (if append
+                      "-a"
+                    "")))))
+
+;;;###autoload
+(defun pylookup-update-all ()
+  "Run pylookup-update for all sources and create the database at `pylookup-db-file'."
+  (interactive)
+  (mapc (lambda (s) (pylookup-update s t)) pylookup-html-locations))
 
 (provide 'pylookup)
 ;;; pylookup.el ends here
