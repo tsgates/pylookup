@@ -1,14 +1,14 @@
 <Author>
 
- Taesoo Kim (tsgatesv@gmail.com)
+ Taesoo Kim (taesoo@mit.edu)
 
 <README>
 
- Pylookup stollen idea from 'http://furius.ca/haddoc', one of my favorite 
+ Pylookup stole idea from 'http://furius.ca/haddoc', one of my favorite 
  emacs mode for python documentation lookup. I reimplemented python code and 
- elisp code not just to support new version of python 2.6 but also to extend 
- it for other documentation lookup interface with easy. Importantly, pylookup 
- mode is much faster and support fancy highlighting.
+ elisp code not just to support new version of python 2.7 but also to extend 
+ it for other documentation lookup interfaces with easy. Importantly, pylookup 
+ mode is much faster and supports fancy highlighting.
 
  Please check, 
     Web  : http://taesoo.org/Opensource/Pylookup

@@ -189,11 +189,21 @@ if __name__ == "__main__":
     import optparse
     parser = optparse.OptionParser( __doc__.strip() )
     
-    parser.add_option( "-d", "--db", dest="db", default="pylookup.db" )
-    parser.add_option( "-l", "--lookup", dest="key" )
-    parser.add_option( "-u", "--update", action="append", type="str", dest="url" )
-    parser.add_option( "-c", "--cache" , action="store_true", default=False, dest="cache")
-    parser.add_option( "-a", "--append", action="store_true", default=False, dest="append") 
+    parser.add_option( "-d", "--db", 
+                       help="database name", 
+                       dest="db", default="pylookup.db" )
+    parser.add_option( "-l", "--lookup", 
+                       help="keyword to search", 
+                       dest="key" )
+    parser.add_option( "-u", "--update",
+                       help="update url or path",
+                       action="append", type="str", dest="url" )
+    parser.add_option( "-c", "--cache" , 
+                       help="extract keywords, internally used",
+                       action="store_true", default=False, dest="cache")
+    parser.add_option( "-a", "--append", 
+                       help="append to the db from multiple sources",
+                       action="store_true", default=False, dest="append") 
 
     ( opts, args ) = parser.parse_args()
 
