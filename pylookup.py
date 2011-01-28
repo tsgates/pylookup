@@ -13,7 +13,8 @@ import urlparse
 import htmllib
 import formatter
 
-from os.path import join, dirname, exists, abspath
+from os.path import join, dirname, exists, abspath, expanduser
+from contextlib import closing
 
 def build_book(s, num):
     """
