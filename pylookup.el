@@ -264,6 +264,8 @@
 (defun pylookup-update-all ()
   "Run pylookup-update for all sources and create the database at `pylookup-db-file'."
   (interactive)
+  ;; truncate db file
+  (with-temp-buffer (write-file pylookup-db-file))
   (mapc (lambda (s) (pylookup-update s t)) pylookup-html-locations))
 
 (provide 'pylookup)
