@@ -50,3 +50,11 @@ Index the database by yourself
  (or './pylookup.py -u http://docs.python.org' if you want to access online doc)
 3. testing: './pylookup.py -l ljust' you should see some results, good luck
 
+<UPDATING DATABASE>
+
+- Single source
+  './pylookup.py -u http://docs.python.org'
+- Multiple sources, remote and local
+  './pylookup.py -u http://docs.python.org -u ~/dev/python'
+- Adding local source to existing database (duplicate entries are not checked)
+  './pylookup.py -a -u ~/dev/python'
