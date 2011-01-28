@@ -160,6 +160,23 @@ def lookup(db, key, out=sys.stdout, insensitive=True):
         except EOFError:
             pass
 
+def cache(db, out=sys.stdout):
+    """Print unique entries from db to out.
+
+    `db` : filename to database
+    `out` : file-like to write to
+    """
+    with open(db, "rb") as f:
+        keys = set()
+        try:
+            while True:
+                e = pickle.load(f)
+                keys.add(e.entry)
+        except EOFError:
+            pass
+        for k in keys:
+            print >> out, k
+
 if __name__ == "__main__":
     import optparse
     parser = optparse.OptionParser( __doc__.strip() )
@@ -174,18 +191,9 @@ if __name__ == "__main__":
 
     if opts.url:
         update(opts.db, opts.url, opts.append)
-    # cache
-#     if opts.cache :
         
-#         cache = []
-#         for key in db.keys() :
-#             key = re.sub( "\([^)]*\)", "", key )
-#             key = re.sub( "\[[^]]*\]", "", key )
-#             cache.append( key.strip() )
+    if opts.cache:
+        cache(opts.db)
 
-#         # make it as unique
-#         print "\n".join( list( set( cache ) ) )
-
-    # lookup
-    if opts.key :
+    if opts.key:
         lookup(opts.db, opts.key)
