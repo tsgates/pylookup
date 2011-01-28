@@ -5,11 +5,9 @@ Pylookup is to lookup entries from python documentation, especially within emacs
 Pylookup adopts most of ideas from haddoc, lovely toolkit by Martin Blais.
 """
 
-debug = False
-
-import os
+import sys
 import re
-import anydbm
+import pickle
 import urllib
 import urlparse
 import htmllib
@@ -112,10 +110,57 @@ class IndexProcessor( htmllib.HTMLParser ):
 
             self.writer(e)
 
-if __name__ == "__main__":
+def update(db, urls, append=True):
+    """Update database with entries from urls.
 
-    import optparse
+    `db` : filename to database
+    `urls` : list of URL 
+    `append` : append to db
+    """
+    mode = "ab" if append else "wb"
+    with open(db, mode) as f:
+        writer = lambda e: pickle.dump(e, f)
+        for url in urls:
+            parsed = urlparse.urlparse(url)
+            if not parsed.scheme or parsed.scheme == "file":
+                url = "file://%s" % abspath(expanduser(parsed.path))
+            else:
+                url = parsed.geturl()
+            url = url.rstrip("/") + "/"
+            print "Wait for a few seconds (Fetching htmls from '%s')" % url
+            try:
+                index = urllib.urlopen(url + "genindex-all.html").read()
+                parser = IndexProcessor(writer, dirname(url))
+                with closing(parser):
+                    parser.feed(index)
+            except IOError, e:
+                print "Error: fetching file from the web: '%s'" % e
+
+def lookup(db, key, out=sys.stdout, insensitive=True):
+    """Lookup key from database and print to out.
     
+    `db` : filename to database
+    `key` : key to lookup
+    `out` : file-like to write to
+    `insensitive` : lookup key case insensitive
+    """
+    if insensitive:
+        matcher = Element.match_insensitive
+        key = key.lower()
+    else:
+        matcher = Element.match_sensitive
+                                             
+    with open(db, "rb") as f:
+        try:
+            while True:
+                e = pickle.load(f)
+                if matcher(e, key):
+                    print >> out, e 
+        except EOFError:
+            pass
+
+if __name__ == "__main__":
+    import optparse
     parser = optparse.OptionParser( __doc__.strip() )
     
     parser.add_option( "-d", "--db", dest="db", default="pylookup.db" )
@@ -125,68 +170,20 @@ if __name__ == "__main__":
 
     ( opts, args ) = parser.parse_args()
 
-    # create db
-    try:
-        db = anydbm.open( opts.db, 'c' )
-    except anydbm.error :
-        raise SystemExit( "Error: Cannot access DB files" )
-
-    # update
-    if opts.url :
-        # create new db
-        db = anydbm.open( opts.db, 'n' )
-        
-        # trim
-        parsed = urlparse.urlparse(opts.url)
-        if not parsed.scheme or parsed.scheme == "file":
-            opts.url = os.path.expanduser(parsed.path)
-        else:
-            opts.url = parsed.geturl()
-
-        opts.url = opts.url if opts.url[-1] == "/" else opts.url + "/"
-
-        print "Wait for a few second (Fetching htmls from '%s')" % opts.url
-
-        try:
-            index = urllib.urlopen( opts.url + "genindex-all.html" ).read()
-        except IOError, e:
-            raise SystemExit( "Error: fetching file from the web: '%s'" % e )
-        
-        parser = IndexProcessor( db, dirname( opts.url ) )
-        
-        parser.feed( index )
-        parser.close()
-
+    if opts.url:
+        update(opts.db, opts.url)
     # cache
-    if opts.cache :
+#     if opts.cache :
         
-        cache = []
-        for key in db.keys() :
-            key = re.sub( "\([^)]*\)", "", key )
-            key = re.sub( "\[[^]]*\]", "", key )
-            cache.append( key.strip() )
+#         cache = []
+#         for key in db.keys() :
+#             key = re.sub( "\([^)]*\)", "", key )
+#             key = re.sub( "\[[^]]*\]", "", key )
+#             cache.append( key.strip() )
 
-        # make it as unique
-        print "\n".join( list( set( cache ) ) )
+#         # make it as unique
+#         print "\n".join( list( set( cache ) ) )
 
     # lookup
     if opts.key :
-
-        keys = db.keys()
-        
-        results = []
-        
-        for term in opts.key.split() :
-            results.extend( ( x, db[x] ) for x in
-                            filter( re.compile( re.escape( term ), re.I ).search,
-                                    keys) )
-        
-        results.sort()
-
-        for key, url in results :
-            # adjust url if not url
-            if not url.startswith("http"):
-                url = "file://" + abspath(join(dirname(__file__), url))
-            print '%s;%s' % ( key, url )
-
-    db.close()
+        lookup(opts.db, opts.key)
