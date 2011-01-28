@@ -17,6 +17,33 @@ import formatter
 
 from os.path import join, dirname, exists, abspath
 
+class Element(object):
+    def __init__(self, entry, desc, book, url):
+        self.book = book
+        self.url = url
+        self.desc = desc
+        self.entry = entry
+
+    def __str__(self):
+        return "%s\t(%s)\t[%s];%s" % (self.entry, self.desc,
+                                      self.book, self.url)
+
+    def match_insensitive(self, key):
+        """
+        Match key case insensitive against entry.
+
+        `key` : Lowercase string.
+        """
+        return key in self.entry.lower() or key in self.desc.lower()
+
+    def match_sensitive(self, key):
+        """
+        Match key case sensitive against entry.
+
+        `key` : Lowercase string.
+        """
+        return key in self.entry or key in self.desc
+
 class IndexProcessor( htmllib.HTMLParser ):
     """
     Extract the index links from a Python HTML documentation index.
