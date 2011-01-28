@@ -120,7 +120,7 @@ if __name__ == "__main__":
     
     parser.add_option( "-d", "--db", dest="db", default="pylookup.db" )
     parser.add_option( "-l", "--lookup", dest="key" )
-    parser.add_option( "-u", "--update", dest="url" )
+    parser.add_option( "-u", "--update", action="append", type="str", dest="url" )
     parser.add_option( "-c", "--cache" , action="store_true", default=False, dest="cache")
 
     ( opts, args ) = parser.parse_args()
