@@ -211,6 +211,7 @@ if __name__ == "__main__":
                        action="store_true", default=False, dest="append")
     parser.add_option( "-f", "--format",
                        help="type of output formatting, valid: Emacs, Terminal",
+                       choices=["Emacs", "Terminal"],
                        default="Emacs", dest="format")
 
     ( opts, args ) = parser.parse_args()
