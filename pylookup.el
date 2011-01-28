@@ -147,7 +147,7 @@
    (list 
     (let ((initial (thing-at-point 'word)))
       (funcall pylookup-completing-read
-               "Lookup Python Documentation for: "
+               "Search: "
                (if pylookup-cache 
                    pylookup-cache 
                  (setq pylookup-cache (pylookup-exec-get-cache)))

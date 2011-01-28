@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 
 """
-Pylookup is to lookup entries from python documentation, especially within emacs.
-Pylookup adopts most of ideas from haddoc, lovely toolkit by Martin Blais.
+Pylookup is to lookup entries from python documentation, especially within
+emacs. Pylookup adopts most of ideas from haddoc, lovely toolkit by Martin
+Blais.
+
+(usage)
+  ./pylookup.py -l ljust
+  ./pylookup.py -u http://docs.python.org
+  
 """
 
 import sys
@@ -128,7 +134,7 @@ def update(db, urls, append=False):
             else:
                 url = parsed.geturl()
             url = url.rstrip("/") + "/"
-            print "Wait for a few seconds (Fetching htmls from '%s')" % url
+            print "Wait for a few seconds ..\nFetching htmls from '%s'" % url
             try:
                 index = urllib.urlopen(url + "genindex-all.html").read()
                 parser = IndexProcessor(writer, dirname(url))
@@ -175,6 +181,8 @@ def cache(db, out=sys.stdout):
         except EOFError:
             pass
         for k in keys:
+            k = re.sub( "\([^)]*\)", "", k )
+            k = re.sub( "\[[^]]*\]", "", k )
             print >> out, k
 
 if __name__ == "__main__":
@@ -185,7 +193,7 @@ if __name__ == "__main__":
     parser.add_option( "-l", "--lookup", dest="key" )
     parser.add_option( "-u", "--update", action="append", type="str", dest="url" )
     parser.add_option( "-c", "--cache" , action="store_true", default=False, dest="cache")
-    parser.add_option( "-a", "--append" , action="store_true", default=False, dest="append") 
+    parser.add_option( "-a", "--append", action="store_true", default=False, dest="append") 
 
     ( opts, args ) = parser.parse_args()
 
