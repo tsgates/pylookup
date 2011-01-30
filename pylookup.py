@@ -148,7 +148,7 @@ def update(db, urls, append=False):
             except IOError, e:
                 print "Error: fetching file from the web: '%s'" % e
 
-def lookup(db, key, out=sys.stdout, insensitive=True, format=EMACS_FORMAT):
+def lookup(db, key, format, out=sys.stdout, insensitive=True):
     """Lookup key from database and print to out.
     
     `db` : filename to database
@@ -223,4 +223,4 @@ if __name__ == "__main__":
         cache(opts.db)
 
     if opts.key:
-        lookup(opts.db, opts.key, format=opts.format)
+        lookup(opts.db, opts.key, opts.format)
