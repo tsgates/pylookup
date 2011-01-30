@@ -22,8 +22,8 @@ import formatter
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
 
-EMACS_FORMAT = "%(entry)s\t(%(desc)s)\t[%(book)s];%(url)s"
-TERMINAL_FORMAT = "%(entry)s\t(%(desc)s)\t[%(book)s]\n%(url)s"
+EMACS_FORMAT = "{entry}\t({desc})\t[{book}];{url}"
+TERMINAL_FORMAT = "{entry}\t({desc})\t[{book}]\n{url}s"
 
 def build_book(s, num):
     """
@@ -43,11 +43,9 @@ class Element(object):
         self.desc = desc
         self.entry = entry
 
-    def format(self, fstring):
-        return fstring % {'entry': self.entry,
-                          'desc' : self.desc,
-                          'book' : self.book,
-                          'url' : self.url }
+    def __format__(self, format_spec):
+        return format_spec.format(entry=self.entry, desc=self.desc,
+                                  book=self.book, url=self.url)
 
     def match_insensitive(self, key):
         """
@@ -148,7 +146,7 @@ def update(db, urls, append=False):
             except IOError, e:
                 print "Error: fetching file from the web: '%s'" % e
 
-def lookup(db, key, format, out=sys.stdout, insensitive=True):
+def lookup(db, key, format_spec, out=sys.stdout, insensitive=True):
     """Lookup key from database and print to out.
     
     `db` : filename to database
@@ -167,7 +165,7 @@ def lookup(db, key, format, out=sys.stdout, insensitive=True):
             while True:
                 e = pickle.load(f)
                 if matcher(e, key):
-                    print >> out, e.format(format) 
+                    print >> out, format(e, format_spec)
         except EOFError:
             pass
 
