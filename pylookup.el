@@ -133,7 +133,8 @@
      (with-output-to-string
          (call-process pylookup-program nil standard-output nil 
                        "-d" (expand-file-name pylookup-db-file) 
-               "-l" search-term))
+                       "-l" search-term
+                       "-f" "Emacs"))
      "\n" t)))
 
 ;;=================================================================
