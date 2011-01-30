@@ -22,8 +22,10 @@ import formatter
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
 
-EMACS_FORMAT = "{entry}\t({desc})\t[{book}];{url}"
-TERMINAL_FORMAT = "{entry}\t({desc})\t[{book}]\n{url}s"
+FORMATS = {
+             "Emacs" : "{entry}\t({desc})\t[{book}];{url}",
+             "Terminal" : "{entry}\t({desc})\t[{book}]\n{url}"
+           }
 
 def build_book(s, num):
     """
@@ -221,4 +223,4 @@ if __name__ == "__main__":
         cache(opts.db)
 
     if opts.key:
-        lookup(opts.db, opts.key, opts.format)
+        lookup(opts.db, opts.key, FORMATS[opts.format])
