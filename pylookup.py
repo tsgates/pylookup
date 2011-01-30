@@ -223,6 +223,4 @@ if __name__ == "__main__":
         cache(opts.db)
 
     if opts.key:
-        format = TERMINAL_FORMAT if opts.format.lower() == "terminal"\
-                                  else EMACS_FORMAT
-        lookup(opts.db, opts.key, format=format)
+        lookup(opts.db, opts.key, format=opts.format)
