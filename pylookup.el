@@ -33,6 +33,7 @@
     (define-key map "j"        'pylookup-mode-next-line)
     (define-key map "p"        'pylookup-move-prev-line)
     (define-key map "k"        'pylookup-move-prev-line)
+    (define-key map "/"        'isearch-forward)
 
     (define-key map "v"        'scroll-down)
     (define-key map "V"        'scroll-up)
