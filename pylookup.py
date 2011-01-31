@@ -38,6 +38,14 @@ def build_book(s, num):
         if matcher in s:
             return replacement if num == 1 else "%s/%d" % (replacement, num)
 
+def trim(s):
+    """
+    Add any globle filtering rules here
+    """
+    s = s.replace( "Python Enhancement Proposals!", "")
+    s = s.replace( "PEP ", "PEP-")
+    return s
+
 class Element(object):
     def __init__(self, entry, desc, book, url):
         self.book = book
@@ -108,13 +116,15 @@ class IndexProcessor( htmllib.HTMLParser ):
                 #  ex) __and__() (in module operator)
                 if not self.list_entry :
                     self.entry = re.sub( "\([^)]+\)", "", self.desc )
-                
-                    match = re.search( "\([^)]+\)", self.desc )
                     
+                    # clean up PEP
+                    self.entry = trim(self.entry)
+                    
+                    match = re.search( "\([^)]+\)", self.desc )
                     if match :
                         self.desc = match.group(0)
                         
-                self.desc = re.sub( "[()]", "", self.desc )
+                self.desc = trim(re.sub( "[()]", "", self.desc ))
 
             self.num_of_a += 1
             book = build_book(self.url, self.num_of_a)
@@ -182,12 +192,13 @@ def cache(db, out=sys.stdout):
         try:
             while True:
                 e = pickle.load(f)
-                keys.add(e.entry)
+                k = e.entry
+                k = re.sub( "\([^)]*\)", "", k )
+                k = re.sub( "\[[^]]*\]", "", k )
+                keys.add(k)
         except EOFError:
             pass
         for k in keys:
-            k = re.sub( "\([^)]*\)", "", k )
-            k = re.sub( "\[[^]]*\]", "", k )
             print >> out, k
 
 if __name__ == "__main__":

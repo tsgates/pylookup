@@ -223207,7 +223207,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/weakr
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0205'
+S'PEP-0205'
 p9
 sS'book'
 p10
@@ -223215,7 +223215,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0205'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223234,7 +223235,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0255'
+S'PEP-0255'
 p9
 sS'book'
 p10
@@ -223242,7 +223243,8 @@ S'ref'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223261,7 +223263,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0342'
+S'PEP-0342'
 p9
 sS'book'
 p10
@@ -223269,7 +223271,8 @@ S'ref'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223288,7 +223291,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/exp
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0342'
+S'PEP-0342'
 p9
 sS'book'
 p10
@@ -223296,7 +223299,8 @@ S'ref/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223315,7 +223319,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/com
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0343'
+S'PEP-0343'
 p9
 sS'book'
 p10
@@ -223323,7 +223327,8 @@ S'ref'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223342,7 +223347,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/dat
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0343'
+S'PEP-0343'
 p9
 sS'book'
 p10
@@ -223350,7 +223355,8 @@ S'ref/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223369,7 +223375,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/conte
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 0343'
+S'PEP-0343'
 p9
 sS'book'
 p10
@@ -223377,7 +223383,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-0343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223396,7 +223403,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.0.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 100'
+S'PEP-100'
 p9
 sS'book'
 p10
@@ -223404,7 +223411,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-100'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223423,7 +223431,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/windows
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 11'
+S'PEP-11'
 p9
 sS'book'
 p10
@@ -223431,7 +223439,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-11'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223450,7 +223459,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 205'
+S'PEP-205'
 p9
 sS'book'
 p10
@@ -223458,7 +223467,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-205'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223477,7 +223487,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 207'
+S'PEP-207'
 p9
 sS'book'
 p10
@@ -223485,7 +223495,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-207'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223504,7 +223515,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 208'
+S'PEP-208'
 p9
 sS'book'
 p10
@@ -223512,7 +223523,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-208'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223531,7 +223543,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 217'
+S'PEP-217'
 p9
 sS'book'
 p10
@@ -223539,7 +223551,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-217'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223558,7 +223571,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 218'
+S'PEP-218'
 p9
 sS'book'
 p10
@@ -223566,7 +223579,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-218'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223585,7 +223599,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 218'
+S'PEP-218'
 p9
 sS'book'
 p10
@@ -223593,7 +223607,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-218'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223612,7 +223627,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 218'
+S'PEP-218'
 p9
 sS'book'
 p10
@@ -223620,7 +223635,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-218'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223639,7 +223655,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 227'
+S'PEP-227'
 p9
 sS'book'
 p10
@@ -223647,7 +223663,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-227'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223666,7 +223683,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 227'
+S'PEP-227'
 p9
 sS'book'
 p10
@@ -223674,7 +223691,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-227'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223693,7 +223711,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 227'
+S'PEP-227'
 p9
 sS'book'
 p10
@@ -223701,7 +223719,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-227'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223720,7 +223739,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 229'
+S'PEP-229'
 p9
 sS'book'
 p10
@@ -223728,7 +223747,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-229'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223747,7 +223767,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 230'
+S'PEP-230'
 p9
 sS'book'
 p10
@@ -223755,7 +223775,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-230'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223774,7 +223795,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 230'
+S'PEP-230'
 p9
 sS'book'
 p10
@@ -223782,7 +223803,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-230'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223801,7 +223823,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 232'
+S'PEP-232'
 p9
 sS'book'
 p10
@@ -223809,7 +223831,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-232'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223828,7 +223851,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 234'
+S'PEP-234'
 p9
 sS'book'
 p10
@@ -223836,7 +223859,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-234'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223855,7 +223879,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/funct
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 236'
+S'PEP-236'
 p9
 sS'book'
 p10
@@ -223863,7 +223887,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-236'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223882,7 +223907,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 236'
+S'PEP-236'
 p9
 sS'book'
 p10
@@ -223890,7 +223915,8 @@ S'ref/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-236'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223909,7 +223935,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 236'
+S'PEP-236'
 p9
 sS'book'
 p10
@@ -223917,7 +223943,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-236'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223936,7 +223963,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/stdty
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 237'
+S'PEP-237'
 p9
 sS'book'
 p10
@@ -223944,7 +223971,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-237'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223963,7 +223991,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 237'
+S'PEP-237'
 p9
 sS'book'
 p10
@@ -223971,7 +223999,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-237'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -223990,7 +224019,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 237'
+S'PEP-237'
 p9
 sS'book'
 p10
@@ -223998,7 +224027,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-237'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224017,7 +224047,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 237'
+S'PEP-237'
 p9
 sS'book'
 p10
@@ -224025,7 +224055,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-237'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224044,7 +224075,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224052,7 +224083,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224071,7 +224103,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224079,7 +224111,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224098,7 +224131,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/glossary.html
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224106,7 +224139,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224125,7 +224159,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/c-api/veryhig
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224133,7 +224167,8 @@ S'api/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224152,7 +224187,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224160,7 +224195,8 @@ S'etc/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224179,7 +224215,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224187,7 +224223,8 @@ S'etc/6'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224206,7 +224243,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 238'
+S'PEP-238'
 p9
 sS'book'
 p10
@@ -224214,7 +224251,8 @@ S'etc/7'
 p11
 sS'desc'
 p12
-g9
+S'PEP-238'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224233,7 +224271,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 241'
+S'PEP-241'
 p9
 sS'book'
 p10
@@ -224241,7 +224279,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-241'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224260,7 +224299,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 243'
+S'PEP-243'
 p9
 sS'book'
 p10
@@ -224268,7 +224307,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-243'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224287,7 +224327,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sqlit
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 246'
+S'PEP-246'
 p9
 sS'book'
 p10
@@ -224295,7 +224335,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-246'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224314,7 +224355,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 249'
+S'PEP-249'
 p9
 sS'book'
 p10
@@ -224322,7 +224363,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-249'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224341,7 +224383,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 249'
+S'PEP-249'
 p9
 sS'book'
 p10
@@ -224349,7 +224391,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-249'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224368,7 +224411,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sqlit
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 249'
+S'PEP-249'
 p9
 sS'book'
 p10
@@ -224376,7 +224419,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-249'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224395,7 +224439,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sqlit
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 249'
+S'PEP-249'
 p9
 sS'book'
 p10
@@ -224403,7 +224447,8 @@ S'lib/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-249'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224422,7 +224467,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 252'
+S'PEP-252'
 p9
 sS'book'
 p10
@@ -224430,7 +224475,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-252'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224449,7 +224495,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 252'
+S'PEP-252'
 p9
 sS'book'
 p10
@@ -224457,7 +224503,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-252'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224476,7 +224523,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 253'
+S'PEP-253'
 p9
 sS'book'
 p10
@@ -224484,7 +224531,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-253'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224503,7 +224551,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 253'
+S'PEP-253'
 p9
 sS'book'
 p10
@@ -224511,7 +224559,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-253'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224530,7 +224579,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 253'
+S'PEP-253'
 p9
 sS'book'
 p10
@@ -224538,7 +224587,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-253'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224557,7 +224607,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 253'
+S'PEP-253'
 p9
 sS'book'
 p10
@@ -224565,7 +224615,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-253'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224584,7 +224635,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 253'
+S'PEP-253'
 p9
 sS'book'
 p10
@@ -224592,7 +224643,8 @@ S'etc/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-253'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224611,7 +224663,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 255'
+S'PEP-255'
 p9
 sS'book'
 p10
@@ -224619,7 +224671,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224638,7 +224691,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 255'
+S'PEP-255'
 p9
 sS'book'
 p10
@@ -224646,7 +224699,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224665,7 +224719,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 255'
+S'PEP-255'
 p9
 sS'book'
 p10
@@ -224673,7 +224727,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224692,7 +224747,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 255'
+S'PEP-255'
 p9
 sS'book'
 p10
@@ -224700,7 +224755,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224719,7 +224775,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 255'
+S'PEP-255'
 p9
 sS'book'
 p10
@@ -224727,7 +224783,8 @@ S'etc/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-255'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224746,7 +224803,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 261'
+S'PEP-261'
 p9
 sS'book'
 p10
@@ -224754,7 +224811,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-261'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224773,7 +224831,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 261'
+S'PEP-261'
 p9
 sS'book'
 p10
@@ -224781,7 +224839,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-261'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224800,7 +224859,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 263'
+S'PEP-263'
 p9
 sS'book'
 p10
@@ -224808,7 +224867,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-263'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224827,7 +224887,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 263'
+S'PEP-263'
 p9
 sS'book'
 p10
@@ -224835,7 +224895,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-263'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224854,7 +224915,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.2.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 264'
+S'PEP-264'
 p9
 sS'book'
 p10
@@ -224862,7 +224923,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-264'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224881,7 +224943,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/zipim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 273'
+S'PEP-273'
 p9
 sS'book'
 p10
@@ -224889,7 +224951,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-273'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224908,7 +224971,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 273'
+S'PEP-273'
 p9
 sS'book'
 p10
@@ -224916,7 +224979,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-273'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224935,7 +224999,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 273'
+S'PEP-273'
 p9
 sS'book'
 p10
@@ -224943,7 +225007,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-273'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224962,7 +225027,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/design.ht
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 275'
+S'PEP-275'
 p9
 sS'book'
 p10
@@ -224970,7 +225035,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-275'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -224989,7 +225055,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 277'
+S'PEP-277'
 p9
 sS'book'
 p10
@@ -224997,7 +225063,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-277'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225016,7 +225083,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 278'
+S'PEP-278'
 p9
 sS'book'
 p10
@@ -225024,7 +225091,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-278'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225043,7 +225111,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 279'
+S'PEP-279'
 p9
 sS'book'
 p10
@@ -225051,7 +225119,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-279'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225070,7 +225139,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/loggi
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 282'
+S'PEP-282'
 p9
 sS'book'
 p10
@@ -225078,7 +225147,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-282'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225097,7 +225167,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 282'
+S'PEP-282'
 p9
 sS'book'
 p10
@@ -225105,7 +225175,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-282'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225124,7 +225195,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 282'
+S'PEP-282'
 p9
 sS'book'
 p10
@@ -225132,7 +225203,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-282'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225151,7 +225223,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 285'
+S'PEP-285'
 p9
 sS'book'
 p10
@@ -225159,7 +225231,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-285'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225178,7 +225251,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 285'
+S'PEP-285'
 p9
 sS'book'
 p10
@@ -225186,7 +225259,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-285'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225205,7 +225279,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 288'
+S'PEP-288'
 p9
 sS'book'
 p10
@@ -225213,7 +225287,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-288'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225232,7 +225307,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/howto/functio
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 289'
+S'PEP-289'
 p9
 sS'book'
 p10
@@ -225240,7 +225315,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-289'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225259,7 +225335,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 289'
+S'PEP-289'
 p9
 sS'book'
 p10
@@ -225267,7 +225343,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-289'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225286,7 +225363,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 289'
+S'PEP-289'
 p9
 sS'book'
 p10
@@ -225294,7 +225371,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-289'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225313,7 +225391,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/strin
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 292'
+S'PEP-292'
 p9
 sS'book'
 p10
@@ -225321,7 +225399,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-292'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225340,7 +225419,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 292'
+S'PEP-292'
 p9
 sS'book'
 p10
@@ -225348,7 +225427,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-292'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225367,7 +225447,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 293'
+S'PEP-293'
 p9
 sS'book'
 p10
@@ -225375,7 +225455,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-293'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225394,7 +225475,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3000'
+S'PEP-3000'
 p9
 sS'book'
 p10
@@ -225402,7 +225483,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3000'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225421,7 +225503,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/distutils/api
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 301'
+S'PEP-301'
 p9
 sS'book'
 p10
@@ -225429,7 +225511,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-301'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225448,7 +225531,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 301'
+S'PEP-301'
 p9
 sS'book'
 p10
@@ -225456,7 +225539,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-301'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225475,7 +225559,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/funct
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225483,7 +225567,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225502,7 +225587,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225510,7 +225595,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225529,7 +225615,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225537,7 +225623,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225556,7 +225643,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225564,7 +225651,8 @@ S'lib/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225583,7 +225671,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225591,7 +225679,8 @@ S'lib/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225610,7 +225699,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225618,7 +225707,8 @@ S'lib/6'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225637,7 +225727,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225645,7 +225735,8 @@ S'lib/7'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225664,7 +225755,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225672,7 +225763,8 @@ S'lib/8'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225691,7 +225783,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225699,7 +225791,8 @@ S'lib/9'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225718,7 +225811,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225726,7 +225819,8 @@ S'lib/10'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225745,7 +225839,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225753,7 +225847,8 @@ S'lib/11'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225772,7 +225867,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225780,7 +225875,8 @@ S'lib/12'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225799,7 +225895,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pkgut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225807,7 +225903,8 @@ S'lib/13'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225826,7 +225923,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/imp.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225834,7 +225931,8 @@ S'lib/14'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225853,7 +225951,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225861,7 +225959,8 @@ S'ref/15'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225880,7 +225979,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225888,7 +225987,8 @@ S'ref/16'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225907,7 +226007,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/runpy
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225915,7 +226015,8 @@ S'lib/17'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225934,7 +226035,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/runpy
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225942,7 +226043,8 @@ S'lib/18'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225961,7 +226063,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/runpy
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225969,7 +226071,8 @@ S'lib/19'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -225988,7 +226091,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sys.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -225996,7 +226099,8 @@ S'lib/20'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226015,7 +226119,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sys.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226023,7 +226127,8 @@ S'lib/21'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226042,7 +226147,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/sys.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226050,7 +226155,8 @@ S'lib/22'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226069,7 +226175,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/glossary.html
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226077,7 +226183,8 @@ S'etc/23'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226096,7 +226203,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/glossary.html
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226104,7 +226211,8 @@ S'etc/24'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226123,7 +226231,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/zipim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226131,7 +226239,8 @@ S'lib/25'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226150,7 +226259,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226158,7 +226267,8 @@ S'etc/26'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226177,7 +226287,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226185,7 +226295,8 @@ S'etc/27'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226204,7 +226315,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226212,7 +226323,8 @@ S'etc/28'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226231,7 +226343,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226239,7 +226351,8 @@ S'etc/29'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226258,7 +226371,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/linec
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 302'
+S'PEP-302'
 p9
 sS'book'
 p10
@@ -226266,7 +226379,8 @@ S'lib/30'
 p11
 sS'desc'
 p12
-g9
+S'PEP-302'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226285,7 +226399,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/csv.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 305'
+S'PEP-305'
 p9
 sS'book'
 p10
@@ -226293,7 +226407,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-305'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226312,7 +226427,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 305'
+S'PEP-305'
 p9
 sS'book'
 p10
@@ -226320,7 +226435,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-305'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226339,7 +226455,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/pickl
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 307'
+S'PEP-307'
 p9
 sS'book'
 p10
@@ -226347,7 +226463,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-307'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226366,7 +226483,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 307'
+S'PEP-307'
 p9
 sS'book'
 p10
@@ -226374,7 +226491,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-307'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226393,7 +226511,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 307'
+S'PEP-307'
 p9
 sS'book'
 p10
@@ -226401,7 +226519,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-307'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226420,7 +226539,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.3.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 307'
+S'PEP-307'
 p9
 sS'book'
 p10
@@ -226428,7 +226547,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-307'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226447,7 +226567,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/programmi
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 308'
+S'PEP-308'
 p9
 sS'book'
 p10
@@ -226455,7 +226575,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-308'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226474,7 +226595,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 308'
+S'PEP-308'
 p9
 sS'book'
 p10
@@ -226482,7 +226603,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-308'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226501,7 +226623,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 308'
+S'PEP-308'
 p9
 sS'book'
 p10
@@ -226509,7 +226631,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-308'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226528,7 +226651,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/exp
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 308'
+S'PEP-308'
 p9
 sS'book'
 p10
@@ -226536,7 +226659,8 @@ S'ref/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-308'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226555,7 +226679,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 309'
+S'PEP-309'
 p9
 sS'book'
 p10
@@ -226563,7 +226687,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-309'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226582,7 +226707,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3100'
+S'PEP-3100'
 p9
 sS'book'
 p10
@@ -226590,7 +226715,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3100'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226609,7 +226735,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/strin
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3101'
+S'PEP-3101'
 p9
 sS'book'
 p10
@@ -226617,7 +226743,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3101'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226636,7 +226763,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/strin
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3101'
+S'PEP-3101'
 p9
 sS'book'
 p10
@@ -226644,7 +226771,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3101'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226663,7 +226791,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3101'
+S'PEP-3101'
 p9
 sS'book'
 p10
@@ -226671,7 +226799,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3101'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226690,7 +226819,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3105'
+S'PEP-3105'
 p9
 sS'book'
 p10
@@ -226698,7 +226827,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3105'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226717,7 +226847,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3105'
+S'PEP-3105'
 p9
 sS'book'
 p10
@@ -226725,7 +226855,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3105'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226744,7 +226875,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3106'
+S'PEP-3106'
 p9
 sS'book'
 p10
@@ -226752,7 +226883,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3106'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226771,7 +226903,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3110'
+S'PEP-3110'
 p9
 sS'book'
 p10
@@ -226779,7 +226911,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3110'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226798,7 +226931,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3112'
+S'PEP-3112'
 p9
 sS'book'
 p10
@@ -226806,7 +226939,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3112'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226825,7 +226959,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3112'
+S'PEP-3112'
 p9
 sS'book'
 p10
@@ -226833,7 +226967,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3112'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226852,7 +226987,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3116'
+S'PEP-3116'
 p9
 sS'book'
 p10
@@ -226860,7 +226995,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3116'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226879,7 +227015,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3118'
+S'PEP-3118'
 p9
 sS'book'
 p10
@@ -226887,7 +227023,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3118'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226906,7 +227043,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/dat
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3119'
+S'PEP-3119'
 p9
 sS'book'
 p10
@@ -226914,7 +227051,8 @@ S'ref'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3119'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226933,7 +227071,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/colle
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3119'
+S'PEP-3119'
 p9
 sS'book'
 p10
@@ -226941,7 +227079,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3119'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226960,7 +227099,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/abc.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3119'
+S'PEP-3119'
 p9
 sS'book'
 p10
@@ -226968,7 +227107,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3119'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -226987,7 +227127,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3119'
+S'PEP-3119'
 p9
 sS'book'
 p10
@@ -226995,7 +227135,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3119'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227014,7 +227155,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/howto/cportin
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3121'
+S'PEP-3121'
 p9
 sS'book'
 p10
@@ -227022,7 +227163,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3121'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227041,7 +227183,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3127'
+S'PEP-3127'
 p9
 sS'book'
 p10
@@ -227049,7 +227191,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3127'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227068,7 +227211,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3129'
+S'PEP-3129'
 p9
 sS'book'
 p10
@@ -227076,7 +227219,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3129'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227095,7 +227239,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3137'
+S'PEP-3137'
 p9
 sS'book'
 p10
@@ -227103,7 +227247,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3137'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227122,7 +227267,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 314'
+S'PEP-314'
 p9
 sS'book'
 p10
@@ -227130,7 +227275,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-314'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227149,7 +227295,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/distutils/api
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 314'
+S'PEP-314'
 p9
 sS'book'
 p10
@@ -227157,7 +227303,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-314'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227176,7 +227323,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/abc.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3141'
+S'PEP-3141'
 p9
 sS'book'
 p10
@@ -227184,7 +227331,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3141'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227203,7 +227351,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/numbe
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3141'
+S'PEP-3141'
 p9
 sS'book'
 p10
@@ -227211,7 +227359,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3141'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227230,7 +227379,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 3141'
+S'PEP-3141'
 p9
 sS'book'
 p10
@@ -227238,7 +227387,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-3141'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227257,7 +227407,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 318'
+S'PEP-318'
 p9
 sS'book'
 p10
@@ -227265,7 +227415,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-318'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227284,7 +227435,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 318'
+S'PEP-318'
 p9
 sS'book'
 p10
@@ -227292,7 +227443,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-318'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227311,7 +227463,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 318'
+S'PEP-318'
 p9
 sS'book'
 p10
@@ -227319,7 +227471,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-318'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227338,7 +227491,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 322'
+S'PEP-322'
 p9
 sS'book'
 p10
@@ -227346,7 +227499,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-322'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227365,7 +227519,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 322'
+S'PEP-322'
 p9
 sS'book'
 p10
@@ -227373,7 +227527,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-322'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227392,7 +227547,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/subpr
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 324'
+S'PEP-324'
 p9
 sS'book'
 p10
@@ -227400,7 +227555,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-324'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227419,7 +227575,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 324'
+S'PEP-324'
 p9
 sS'book'
 p10
@@ -227427,7 +227583,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-324'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227446,7 +227603,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 325'
+S'PEP-325'
 p9
 sS'book'
 p10
@@ -227454,7 +227611,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-325'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227473,7 +227631,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 327'
+S'PEP-327'
 p9
 sS'book'
 p10
@@ -227481,7 +227639,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-327'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227500,7 +227659,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/programmi
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227508,7 +227667,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227527,7 +227687,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227535,7 +227695,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227554,7 +227715,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227562,7 +227723,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227581,7 +227743,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/reference/sim
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227589,7 +227751,8 @@ S'ref/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227608,7 +227771,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227616,7 +227779,8 @@ S'etc/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227635,7 +227799,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 328'
+S'PEP-328'
 p9
 sS'book'
 p10
@@ -227643,7 +227807,8 @@ S'etc/6'
 p11
 sS'desc'
 p12
-g9
+S'PEP-328'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227662,7 +227827,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.4.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 331'
+S'PEP-331'
 p9
 sS'book'
 p10
@@ -227670,7 +227835,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-331'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227689,7 +227855,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227697,7 +227863,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227716,7 +227883,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227724,7 +227891,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227743,7 +227911,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/howto/webserv
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227751,7 +227919,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227770,7 +227939,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227778,7 +227947,8 @@ S'lib/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227797,7 +227967,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227805,7 +227975,8 @@ S'lib/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227824,7 +227995,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227832,7 +228003,8 @@ S'lib/6'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227851,7 +228023,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227859,7 +228031,8 @@ S'lib/7'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227878,7 +228051,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227886,7 +228059,8 @@ S'lib/8'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227905,7 +228079,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227913,7 +228087,8 @@ S'lib/9'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227932,7 +228107,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227940,7 +228115,8 @@ S'lib/10'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227959,7 +228135,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227967,7 +228143,8 @@ S'lib/11'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -227986,7 +228163,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -227994,7 +228171,8 @@ S'lib/12'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228013,7 +228191,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -228021,7 +228199,8 @@ S'lib/13'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228040,7 +228219,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -228048,7 +228227,8 @@ S'lib/14'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228067,7 +228247,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -228075,7 +228255,8 @@ S'lib/15'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228094,7 +228275,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -228102,7 +228283,8 @@ S'lib/16'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228121,7 +228303,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/wsgir
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 333'
+S'PEP-333'
 p9
 sS'book'
 p10
@@ -228129,7 +228311,8 @@ S'lib/17'
 p11
 sS'desc'
 p12
-g9
+S'PEP-333'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228148,7 +228331,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 338'
+S'PEP-338'
 p9
 sS'book'
 p10
@@ -228156,7 +228339,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-338'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228175,7 +228359,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 338'
+S'PEP-338'
 p9
 sS'book'
 p10
@@ -228183,7 +228367,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-338'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228202,7 +228387,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/runpy
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 338'
+S'PEP-338'
 p9
 sS'book'
 p10
@@ -228210,7 +228395,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-338'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228229,7 +228415,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 339'
+S'PEP-339'
 p9
 sS'book'
 p10
@@ -228237,7 +228423,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-339'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228256,7 +228443,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 341'
+S'PEP-341'
 p9
 sS'book'
 p10
@@ -228264,7 +228451,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-341'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228283,7 +228471,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 342'
+S'PEP-342'
 p9
 sS'book'
 p10
@@ -228291,7 +228479,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228310,7 +228499,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 342'
+S'PEP-342'
 p9
 sS'book'
 p10
@@ -228318,7 +228507,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228337,7 +228527,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 342'
+S'PEP-342'
 p9
 sS'book'
 p10
@@ -228345,7 +228535,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228364,7 +228555,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/howto/functio
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 342'
+S'PEP-342'
 p9
 sS'book'
 p10
@@ -228372,7 +228563,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-342'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228391,7 +228583,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 343'
+S'PEP-343'
 p9
 sS'book'
 p10
@@ -228399,7 +228591,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228418,7 +228611,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/__fut
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 343'
+S'PEP-343'
 p9
 sS'book'
 p10
@@ -228426,7 +228619,8 @@ S'lib/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228445,7 +228639,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/glossary.html
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 343'
+S'PEP-343'
 p9
 sS'book'
 p10
@@ -228453,7 +228647,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228472,7 +228667,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 343'
+S'PEP-343'
 p9
 sS'book'
 p10
@@ -228480,7 +228675,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-343'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228499,7 +228695,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 347'
+S'PEP-347'
 p9
 sS'book'
 p10
@@ -228507,7 +228703,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-347'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228526,7 +228723,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 352'
+S'PEP-352'
 p9
 sS'book'
 p10
@@ -228534,7 +228731,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-352'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228553,7 +228751,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 352'
+S'PEP-352'
 p9
 sS'book'
 p10
@@ -228561,7 +228759,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-352'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228580,7 +228779,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 353'
+S'PEP-353'
 p9
 sS'book'
 p10
@@ -228588,7 +228787,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-353'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228607,7 +228807,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 353'
+S'PEP-353'
 p9
 sS'book'
 p10
@@ -228615,7 +228815,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-353'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228634,7 +228835,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 353'
+S'PEP-353'
 p9
 sS'book'
 p10
@@ -228642,7 +228843,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-353'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228661,7 +228863,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 356'
+S'PEP-356'
 p9
 sS'book'
 p10
@@ -228669,7 +228871,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-356'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228688,7 +228891,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.5.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 357'
+S'PEP-357'
 p9
 sS'book'
 p10
@@ -228696,7 +228899,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-357'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228715,7 +228919,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 361'
+S'PEP-361'
 p9
 sS'book'
 p10
@@ -228723,7 +228927,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-361'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228742,7 +228947,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/runpy
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 366'
+S'PEP-366'
 p9
 sS'book'
 p10
@@ -228750,7 +228955,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-366'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228769,7 +228975,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 370'
+S'PEP-370'
 p9
 sS'book'
 p10
@@ -228777,7 +228983,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-370'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228796,7 +229003,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 370'
+S'PEP-370'
 p9
 sS'book'
 p10
@@ -228804,7 +229011,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-370'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228823,7 +229031,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/using/cmdline
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 370'
+S'PEP-370'
 p9
 sS'book'
 p10
@@ -228831,7 +229039,8 @@ S'etc/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-370'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228850,7 +229059,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 370'
+S'PEP-370'
 p9
 sS'book'
 p10
@@ -228858,7 +229067,8 @@ S'etc/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-370'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228877,7 +229087,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.6.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 371'
+S'PEP-371'
 p9
 sS'book'
 p10
@@ -228885,7 +229095,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-371'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228904,7 +229115,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 372'
+S'PEP-372'
 p9
 sS'book'
 p10
@@ -228912,7 +229123,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-372'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228931,7 +229143,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/strin
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 378'
+S'PEP-378'
 p9
 sS'book'
 p10
@@ -228939,7 +229151,8 @@ S'lib'
 p11
 sS'desc'
 p12
-g9
+S'PEP-378'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228958,7 +229171,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 378'
+S'PEP-378'
 p9
 sS'book'
 p10
@@ -228966,7 +229179,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-378'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -228985,7 +229199,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 389'
+S'PEP-389'
 p9
 sS'book'
 p10
@@ -228993,7 +229207,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-389'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229012,7 +229227,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.7.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 391'
+S'PEP-391'
 p9
 sS'book'
 p10
@@ -229020,7 +229235,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-391'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229039,7 +229255,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/general.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 5'
+S'PEP-5'
 p9
 sS'book'
 p10
@@ -229047,7 +229263,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-5'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229066,7 +229283,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/whatsnew/2.1.
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 5'
+S'PEP-5'
 p9
 sS'book'
 p10
@@ -229074,7 +229291,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-5'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229093,7 +229311,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/general.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 6'
+S'PEP-6'
 p9
 sS'book'
 p10
@@ -229101,7 +229319,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-6'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229120,7 +229339,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/programmi
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 8'
+S'PEP-8'
 p9
 sS'book'
 p10
@@ -229128,7 +229347,8 @@ S'etc'
 p11
 sS'desc'
 p12
-g9
+S'PEP-8'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229147,7 +229367,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/faq/windows.h
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 8'
+S'PEP-8'
 p9
 sS'book'
 p10
@@ -229155,7 +229375,8 @@ S'etc/2'
 p11
 sS'desc'
 p12
-g9
+S'PEP-8'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229174,7 +229395,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/threa
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 8'
+S'PEP-8'
 p9
 sS'book'
 p10
@@ -229182,7 +229403,8 @@ S'lib/3'
 p11
 sS'desc'
 p12
-g9
+S'PEP-8'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229201,7 +229423,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/library/email
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 8'
+S'PEP-8'
 p9
 sS'book'
 p10
@@ -229209,7 +229431,8 @@ S'lib/4'
 p11
 sS'desc'
 p12
-g9
+S'PEP-8'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
@@ -229228,7 +229451,7 @@ S'file:///home/taesoo/.lisp/addons/pylookup/python-2.7.1-docs-html/tutorial/cont
 p7
 sS'entry'
 p8
-S'Python Enhancement Proposals!PEP 8'
+S'PEP-8'
 p9
 sS'book'
 p10
@@ -229236,7 +229459,8 @@ S'etc/5'
 p11
 sS'desc'
 p12
-g9
+S'PEP-8'
+p13
 sb.ccopy_reg
 _reconstructor
 p0
