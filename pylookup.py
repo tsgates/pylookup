@@ -14,13 +14,17 @@ Blais.
 import sys
 import re
 import pickle
-import urllib
-import urlparse
-import htmllib
 import formatter
 
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
+
+if sys.version_info.major == 3:
+    import html.parser    as htmllib
+    import urllib.parse   as urlparse
+    import urllib.request as urllib
+else:
+    import htmllib, urllib, urlparse
 
 FORMATS = {
              "Emacs" : "{entry}\t({desc})\t[{book}];{url}",
@@ -149,14 +153,18 @@ def update(db, urls, append=False):
             else:
                 url = parsed.geturl()
             url = url.rstrip("/") + "/"
-            print "Wait for a few seconds ..\nFetching htmls from '%s'" % url
+            print("Wait for a few seconds ..\nFetching htmls from '%s'" % url)
             try:
                 index = urllib.urlopen(url + "genindex-all.html").read()
+                
+                if not issubclass(type(index), str):
+                    index = index.decode()
+                
                 parser = IndexProcessor(writer, dirname(url))
                 with closing(parser):
                     parser.feed(index)
-            except IOError, e:
-                print "Error: fetching file from the web: '%s'" % e
+            except IOError as e:
+                print("Error: fetching file from the web: '%s'" % e)
 
 def lookup(db, key, format_spec, out=sys.stdout, insensitive=True):
     """Lookup key from database and print to out.
@@ -177,7 +185,7 @@ def lookup(db, key, format_spec, out=sys.stdout, insensitive=True):
             while True:
                 e = pickle.load(f)
                 if matcher(e, key):
-                    print >> out, format(e, format_spec)
+                    out.write('%s\n' % format(e, format_spec))
         except EOFError:
             pass
 
@@ -199,7 +207,7 @@ def cache(db, out=sys.stdout):
         except EOFError:
             pass
         for k in keys:
-            print >> out, k
+            out.write('%s\n' % k)
 
 if __name__ == "__main__":
     import optparse
