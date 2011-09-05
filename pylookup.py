@@ -163,8 +163,8 @@ def update(db, urls, append=False):
                 parser = IndexProcessor(writer, dirname(url))
                 with closing(parser):
                     parser.feed(index)
-            except IOError as e:
-                print("Error: fetching file from the web: '%s'" % e)
+            except IOError:
+                print("Error: fetching file from the web: '%s'" % sys.exc_info())
 
 def lookup(db, key, format_spec, out=sys.stdout, insensitive=True):
     """Lookup key from database and print to out.
