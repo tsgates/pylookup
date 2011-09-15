@@ -70,7 +70,8 @@
   (use-local-map pylookup-mode-map)
   (setq major-mode 'pylookup-mode)
   (setq mode-name "Pylookup")
-  (setq buffer-read-only t))
+  (setq buffer-read-only t)
+  (run-mode-hooks))
 
 (defun pylookup-move-prev-line ()
   "Move to previous entry"
