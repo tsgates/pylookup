@@ -11,6 +11,8 @@ Blais.
   
 """
 
+from __future__ import with_statement
+
 import sys
 import re
 import pickle
@@ -25,7 +27,7 @@ if sys.version_info.major == 3:
     import urllib.request as urllib
 else:
     import htmllib, urllib, urlparse
-
+    
 FORMATS = {
              "Emacs" : "{entry}\t({desc})\t[{book}];{url}",
              "Terminal" : "{entry}\t({desc})\t[{book}]\n{url}"
