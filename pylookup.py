@@ -68,7 +68,7 @@ class Element(object):
 
     def match_insensitive(self, key):
         """
-        Match key case insensitive against entry.
+        Match key case insensitive against entry and desc.
 
         `key` : Lowercase string.
         """
@@ -76,11 +76,47 @@ class Element(object):
 
     def match_sensitive(self, key):
         """
-        Match key case sensitive against entry.
+        Match key case sensitive against entry and desc.
 
         `key` : Lowercase string.
         """
         return key in self.entry or key in self.desc
+
+    def match_in_entry_insensitive(self, key):
+        """
+        Match key case insensitive against entry.
+
+        `key` : Lowercase string.
+        """
+        return key in self.entry.lower()
+
+    def match_in_entry_sensitive(self, key):
+        """
+        Match key case sensitive against entry.
+
+        `key` : Lowercase string.
+        """
+        return key in self.entry
+
+
+def get_matcher(insensitive=True, desc=True):
+    """
+    Get `Element.match_*` function.
+
+    >>> get_matcher(0, 0)
+    <unbound method Element.match_in_entry_sensitive>
+    >>> get_matcher(1, 0)
+    <unbound method Element.match_in_entry_insensitive>
+    >>> get_matcher(0, 1)
+    <unbound method Element.match_sensitive>
+    >>> get_matcher(1, 1)
+    <unbound method Element.match_insensitive>
+
+    """
+    _sensitive = "_insensitive" if insensitive else "_sensitive"
+    _in_entry = "" if desc else "_in_entry"
+    return getattr(Element, "match{0}{1}".format(_in_entry, _sensitive))
+
 
 class IndexProcessor( htmllib.HTMLParser ):
     """
@@ -173,20 +209,18 @@ def update(db, urls, append=False):
             except IOError:
                 print("Error: fetching file from the web: '%s'" % sys.exc_info())
 
-def lookup(db, key, format_spec, out=sys.stdout, insensitive=True):
+
+def lookup(db, key, format_spec, out=sys.stdout, insensitive=True, desc=True):
     """Lookup key from database and print to out.
-    
+
     `db` : filename to database
     `key` : key to lookup
     `out` : file-like to write to
     `insensitive` : lookup key case insensitive
     """
+    matcher = get_matcher(insensitive, desc)
     if insensitive:
-        matcher = Element.match_insensitive
         key = key.lower()
-    else:
-        matcher = Element.match_sensitive
-                                             
     with open(db, "rb") as f:
         try:
             while True:
@@ -239,6 +273,12 @@ if __name__ == "__main__":
                        help="type of output formatting, valid: Emacs, Terminal",
                        choices=["Emacs", "Terminal"],
                        default="Terminal", dest="format")
+    parser.add_option( "-i", "--insensitive", default=1, choices=['0', '1'],
+                       help="SEARCH OPTION: insensitive search "
+                       "(valid: 0, 1; default: %default)")
+    parser.add_option( "-s", "--desc", default=1, choices=['0', '1'],
+                       help="SEARCH OPTION: include description field "
+                       "(valid: 0, 1; default: %default)")
 
     ( opts, args ) = parser.parse_args()
 
@@ -249,4 +289,5 @@ if __name__ == "__main__":
         cache(opts.db)
 
     if opts.key:
-        lookup(opts.db, opts.key, FORMATS[opts.format])
+        lookup(opts.db, opts.key, FORMATS[opts.format],
+               insensitive=int(opts.insensitive), desc=int(opts.desc))

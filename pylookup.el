@@ -10,6 +10,8 @@
 
 (defvar pylookup-db-file "pylookup.db" "Pylookup database file")
 (defvar pylookup-program "pylookup.py" "Pylookup execution file")
+(defvar pylookup-search-options nil
+  "Pylookup search options (see ./pylookup.py -h)")
 
 ;;=================================================================
 ;; internal variables
@@ -129,14 +131,15 @@
 (defun pylookup-exec-lookup (search-term)
   "Runs a pylookup process and returns a list of (term, url) pairs."
 
-  (mapcar 
+  (mapcar
    (lambda (x) (split-string x ";"))
    (split-string
      (with-output-to-string
-         (call-process pylookup-program nil standard-output nil 
-                       "-d" (expand-file-name pylookup-db-file) 
-                       "-l" search-term
-                       "-f" "Emacs"))
+         (apply 'call-process pylookup-program nil standard-output nil
+                "-d" (expand-file-name pylookup-db-file)
+                "-l" search-term
+                "-f" "Emacs"
+                pylookup-search-options))
      "\n" t)))
 
 ;;=================================================================
