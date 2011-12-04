@@ -15,7 +15,10 @@ from __future__ import with_statement
 
 import sys
 import re
-import pickle
+try:
+    import cPickle as pickle
+except:
+    import pickle
 import formatter
 
 from os.path import join, dirname, exists, abspath, expanduser
