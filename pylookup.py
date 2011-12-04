@@ -94,6 +94,7 @@ class IndexProcessor( htmllib.HTMLParser ):
         self.dirn       = dirn
         self.entry      = ""
         self.desc       = ""
+        self.list_entry = False
         self.do_entry   = False
         self.one_entry  = False
         self.num_of_a   = 0
@@ -157,10 +158,11 @@ def update(db, urls, append=False):
                 url = "file://%s" % abspath(expanduser(parsed.path))
             else:
                 url = parsed.geturl()
-            url = url.rstrip("/") + "/"
+            if not url.endswith('.html'):
+                url = urlparse.urljoin(url, "genindex-all.html")
             print("Wait for a few seconds ..\nFetching htmls from '%s'" % url)
             try:
-                index = urllib.urlopen(url + "genindex-all.html").read()
+                index = urllib.urlopen(url).read()
                 
                 if not issubclass(type(index), str):
                     index = index.decode()
