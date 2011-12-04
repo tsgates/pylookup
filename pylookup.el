@@ -250,6 +250,14 @@
          (shrink-window-if-larger-than-buffer (get-buffer-window tmpbuf)))))))
 
 ;;;###autoload
+(defun pylookup-set-search-option (option-string)
+  "Set search option interactively"
+  (interactive
+   (list (read-string "Search option: "
+                      (mapconcat 'identity pylookup-search-options " "))))
+  (setq pylookup-search-options (split-string option-string " ")))
+
+;;;###autoload
 (defun pylookup-update (src &optional append)
   "Run pylookup-update and create the database at `pylookup-db-file'."
   (interactive 
