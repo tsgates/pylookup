@@ -13,6 +13,7 @@ Blais.
 
 from __future__ import with_statement
 
+import os
 import sys
 import re
 try:
@@ -30,7 +31,8 @@ if sys.version_info.major == 3:
     import urllib.request as urllib
 else:
     import htmllib, urllib, urlparse
-    
+
+VERBOSE = False
 FORMATS = {
              "Emacs" : "{entry}\t({desc})\t[{book}];{url}",
              "Terminal" : "{entry}\t({desc})\t[{book}]\n{url}"
@@ -134,7 +136,8 @@ class IndexProcessor( htmllib.HTMLParser ):
         self.do_entry   = False
         self.one_entry  = False
         self.num_of_a   = 0
-
+        self.desc_cnt   = 0
+        
     def start_dd( self, att ):
         self.list_entry = True
 
@@ -154,10 +157,17 @@ class IndexProcessor( htmllib.HTMLParser ):
             self.save_bgn()
 
     def end_a( self ):
+        global VERBOSE
         if self.one_entry:
             if self.num_of_a == 0 :
                 self.desc = self.save_end()
 
+                if VERBOSE:
+                    self.desc_cnt += 1
+                    if self.desc_cnt % 100 == 0:
+                        sys.stdout.write("%04d %s\r" \
+                                             % (self.desc_cnt, self.desc.ljust(80)))
+                
                 # extract fist element
                 #  ex) __and__() (in module operator)
                 if not self.list_entry :
@@ -189,17 +199,25 @@ def update(db, urls, append=False):
     with open(db, mode) as f:
         writer = lambda e: pickle.dump(e, f)
         for url in urls:
+            # detech 'file' or 'url' schemes
             parsed = urlparse.urlparse(url)
             if not parsed.scheme or parsed.scheme == "file":
-                url = "file://%s" % abspath(expanduser(parsed.path))
+                dst = abspath(expanduser(parsed.path))
+                if not os.path.exists(dst):
+                    print("Error: %s doesn't exist" % dst)
+                    exit(1)
+                url = "file://%s" % dst
             else:
                 url = parsed.geturl()
+                
+            # direct to genindex-all.html
             if not url.endswith('.html'):
-                url = urlparse.urljoin(url, "genindex-all.html")
+                url = url.rstrip("/") + "/genindex-all.html"
+                
             print("Wait for a few seconds ..\nFetching htmls from '%s'" % url)
+            
             try:
                 index = urllib.urlopen(url).read()
-                
                 if not issubclass(type(index), str):
                     index = index.decode()
                 
@@ -253,7 +271,6 @@ def cache(db, out=sys.stdout):
 if __name__ == "__main__":
     import optparse
     parser = optparse.OptionParser( __doc__.strip() )
-    
     parser.add_option( "-d", "--db", 
                        help="database name", 
                        dest="db", default="pylookup.db" )
@@ -279,15 +296,16 @@ if __name__ == "__main__":
     parser.add_option( "-s", "--desc", default=1, choices=['0', '1'],
                        help="SEARCH OPTION: include description field "
                        "(valid: 0, 1; default: %default)")
-
+    parser.add_option("-v", "--verbose",
+                      help="verbose", action="store_true",
+                      dest="verbose", default=False)
     ( opts, args ) = parser.parse_args()
 
+    VERBOSE = opts.verbose
     if opts.url:
         update(opts.db, opts.url, opts.append)
-        
     if opts.cache:
         cache(opts.db)
-
     if opts.key:
         lookup(opts.db, opts.key, FORMATS[opts.format],
                insensitive=int(opts.insensitive), desc=int(opts.desc))

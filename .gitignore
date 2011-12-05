@@ -1,6 +1,5 @@
 *~
 *.elc
 /*.zip
-/makefile
 *.db
 python-*-docs-html
