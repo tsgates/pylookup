@@ -25,7 +25,7 @@ import formatter
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
 
-if sys.version_info.major == 3:
+if sys.version_info[0] == 3:
     import html.parser    as htmllib
     import urllib.parse   as urlparse
     import urllib.request as urllib
