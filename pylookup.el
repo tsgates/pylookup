@@ -282,5 +282,24 @@
   (with-temp-buffer (write-file pylookup-db-file))
   (mapc (lambda (s) (pylookup-update s t)) pylookup-html-locations))
 
+;;;###autoload
+(defun pylookup-lookup-at-point ()
+  "Query the for string with help of word read at point and call `pylookup-lookup'"
+  (interactive)
+  (let* ((default-word (thing-at-point 'word))
+         (default-prompt (concat "Lookup Word "
+                                 (if default-word
+                                     (concat "(" default-word ")") nil)
+                                 ": "))
+         (pylookup-query
+          (funcall #'(lambda (str)
+                       "Remove Whitespace from beginning and end of a string."
+                       (replace-regexp-in-string "^[ \n\t]*\\(.*?\\)[ \n\t]*$"
+                                                 "\\1"
+                                                 str))
+                   (read-string default-prompt nil nil default-word))))
+    (if (= (length pylookup-query) 0) nil
+      (pylookup-lookup pylookup-query))))
+
 (provide 'pylookup)
 ;;; pylookup.el ends here
