@@ -1,4 +1,4 @@
-= Author
+# Author
 
  Taesoo Kim (taesoo@mit.edu)
 
@@ -6,7 +6,7 @@
  Austin Bingham (austin.bingham@gmail.com)
  Takafumi Arakaki <aka.tkf@gmail.com>
 
-= README
+# README
 
  Pylookup stole idea from 'http://furius.ca/haddoc', one of my favorite 
  emacs mode for python documentation lookup. I reimplemented python code and 
@@ -18,9 +18,9 @@
     Web  : http://taesoo.org/proj/pylookup.html
     Repo : http://github.com/tsgates/pylookup
 
-= INSTALL
+# INSTALL
 
-== Create database
+## Create database
 
  You can browse python documents from either online or offline. Since I prefer
  offline, here is an easy step:
@@ -38,7 +38,7 @@
 
  (see updateing database section for more options)
  
-== Elisp
+## Elisp
 
  Here is lisp part for emacs.
  
@@ -67,7 +67,7 @@
   "Run pylookup-update and create the database at `pylookup-db-file'." t)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-= Updating Databases
+# Updating Databases
 
  You can easily accumulate many sources into single database. For example, you
  can index python and scipy at the same time. Here are the examples:
