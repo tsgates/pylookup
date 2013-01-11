@@ -8,7 +8,7 @@ Blais.
 (usage)
   ./pylookup.py -l ljust
   ./pylookup.py -u http://docs.python.org
-  
+
 """
 
 from __future__ import with_statement
@@ -124,10 +124,10 @@ class IndexProcessor( htmllib.HTMLParser ):
     """
     Extract the index links from a Python HTML documentation index.
     """
-    
+
     def __init__( self, writer, dirn):
         htmllib.HTMLParser.__init__( self, formatter.NullFormatter() )
-        
+
         self.writer     = writer
         self.dirn       = dirn
         self.entry      = ""
@@ -137,7 +137,7 @@ class IndexProcessor( htmllib.HTMLParser ):
         self.one_entry  = False
         self.num_of_a   = 0
         self.desc_cnt   = 0
-        
+
     def start_dd( self, att ):
         self.list_entry = True
 
@@ -150,7 +150,7 @@ class IndexProcessor( htmllib.HTMLParser ):
 
     def end_dt( self ):
         self.do_entry = False
-        
+
     def start_a( self, att ):
         if self.one_entry:
             self.url = join( self.dirn, dict( att )[ 'href' ] )
@@ -167,19 +167,19 @@ class IndexProcessor( htmllib.HTMLParser ):
                     if self.desc_cnt % 100 == 0:
                         sys.stdout.write("%04d %s\r" \
                                              % (self.desc_cnt, self.desc.ljust(80)))
-                
+
                 # extract fist element
                 #  ex) __and__() (in module operator)
                 if not self.list_entry :
                     self.entry = re.sub( "\([^)]+\)", "", self.desc )
-                    
+
                     # clean up PEP
                     self.entry = trim(self.entry)
-                    
+
                     match = re.search( "\([^)]+\)", self.desc )
                     if match :
                         self.desc = match.group(0)
-                        
+
                 self.desc = trim(re.sub( "[()]", "", self.desc ))
 
             self.num_of_a += 1
@@ -192,7 +192,7 @@ def update(db, urls, append=False):
     """Update database with entries from urls.
 
     `db` : filename to database
-    `urls` : list of URL 
+    `urls` : list of URL
     `append` : append to db
     """
     mode = "ab" if append else "wb"
@@ -209,23 +209,41 @@ def update(db, urls, append=False):
                 url = "file://%s" % dst
             else:
                 url = parsed.geturl()
-                
-            # direct to genindex-all.html
-            if not url.endswith('.html'):
-                url = url.rstrip("/") + "/genindex-all.html"
-                
-            print("Wait for a few seconds ..\nFetching htmls from '%s'" % url)
-            
-            try:
-                index = urllib.urlopen(url).read()
-                if not issubclass(type(index), str):
-                    index = index.decode()
-                
-                parser = IndexProcessor(writer, dirname(url))
-                with closing(parser):
-                    parser.feed(index)
-            except IOError:
-                print("Error: fetching file from the web: '%s'" % sys.exc_info())
+
+            potential_urls = []
+            if url.endswith('.html'):
+                potential_urls.append(url)
+            else:
+                # guess index URLs
+                # for stdlib, this is genindex-all.html
+                # for django, numpy, etc. it's genindex.html
+                url = url.rstrip("/")
+                potential_urls.append(url + "/genindex-all.html")
+                potential_urls.append(url + "/genindex.html")
+
+            success = False
+            for index_url in potential_urls:
+                try:
+                    print "Wait for a few seconds..."
+                    print "Fetching index from '%s'" % index_url
+
+                    index = urllib.urlopen(index_url).read()
+                    if not issubclass(type(index), str):
+                        index = index.decode()
+
+                    parser = IndexProcessor(writer, dirname(url))
+                    with closing(parser):
+                        parser.feed(index)
+
+                    # success, we don't need to try other potential urls
+                    print "Loaded index from '%s'" % index_url
+                    success = True
+                    break
+                except IOError:
+                    print "Error: fetching file from '%s'" % index_url
+
+            if not success:
+                print "Failed to load index for input '%s'" % url
 
 
 def lookup(db, key, format_spec, out=sys.stdout, insensitive=True, desc=True):
@@ -271,19 +289,19 @@ def cache(db, out=sys.stdout):
 if __name__ == "__main__":
     import optparse
     parser = optparse.OptionParser( __doc__.strip() )
-    parser.add_option( "-d", "--db", 
-                       help="database name", 
+    parser.add_option( "-d", "--db",
+                       help="database name",
                        dest="db", default="pylookup.db" )
-    parser.add_option( "-l", "--lookup", 
-                       help="keyword to search", 
+    parser.add_option( "-l", "--lookup",
+                       help="keyword to search",
                        dest="key" )
     parser.add_option( "-u", "--update",
                        help="update url or path",
                        action="append", type="str", dest="url" )
-    parser.add_option( "-c", "--cache" , 
+    parser.add_option( "-c", "--cache" ,
                        help="extract keywords, internally used",
                        action="store_true", default=False, dest="cache")
-    parser.add_option( "-a", "--append", 
+    parser.add_option( "-a", "--append",
                        help="append to the db from multiple sources",
                        action="store_true", default=False, dest="append")
     parser.add_option( "-f", "--format",
