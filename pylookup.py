@@ -231,7 +231,7 @@ def update(db, urls, append=False):
                     if not issubclass(type(index), str):
                         index = index.decode()
 
-                    parser = IndexProcessor(writer, dirname(url))
+                    parser = IndexProcessor(writer, dirname(index_url))
                     with closing(parser):
                         parser.feed(index)
 
