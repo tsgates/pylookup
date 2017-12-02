@@ -25,12 +25,7 @@ import formatter
 from os.path import join, dirname, exists, abspath, expanduser
 from contextlib import closing
 
-if sys.version_info[0] == 3:
-    import html.parser    as htmllib
-    import urllib.parse   as urlparse
-    import urllib.request as urllib
-else:
-    import htmllib, urllib, urlparse
+import htmllib, urllib, urlparse
 
 VERBOSE = False
 FORMATS = {
@@ -141,14 +136,27 @@ class IndexProcessor( htmllib.HTMLParser ):
     def start_dd( self, att ):
         self.list_entry = True
 
+    def start_ul( self, att ):
+        self.list_entry = True
+
     def end_dd( self ):
+        self.list_entry = False
+
+    def end_ul( self ):
         self.list_entry = False
 
     def start_dt( self, att ):
         self.one_entry = True
         self.num_of_a  = 0
 
+    def start_li( self, att ):
+        self.one_entry = True
+        self.num_of_a  = 0
+
     def end_dt( self ):
+        self.do_entry = False
+
+    def end_li( self ):
         self.do_entry = False
 
     def start_a( self, att ):
@@ -224,8 +232,8 @@ def update(db, urls, append=False):
             success = False
             for index_url in potential_urls:
                 try:
-                    print "Wait for a few seconds..."
-                    print "Fetching index from '%s'" % index_url
+                    print("Wait for a few seconds...")
+                    print("Fetching index from '%s'" % index_url)
 
                     index = urllib.urlopen(index_url).read()
                     if not issubclass(type(index), str):
@@ -236,14 +244,14 @@ def update(db, urls, append=False):
                         parser.feed(index)
 
                     # success, we don't need to try other potential urls
-                    print "Loaded index from '%s'" % index_url
+                    print("Loaded index from '%s'" % index_url)
                     success = True
                     break
                 except IOError:
-                    print "Error: fetching file from '%s'" % index_url
+                    print("Error: fetching file from '%s'" % index_url)
 
             if not success:
-                print "Failed to load index for input '%s'" % url
+                print("Failed to load index for input '%s'" % url)
 
 
 def lookup(db, key, format_spec, out=sys.stdout, insensitive=True, desc=True):
