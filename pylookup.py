@@ -144,12 +144,24 @@ class IndexProcessor( htmllib.HTMLParser ):
     def end_dd( self ):
         self.list_entry = False
 
+    def start_ul( self, att ):
+        self.start_dd(att)
+
+    def end_ul( self ):
+        self.end_dd()
+
     def start_dt( self, att ):
         self.one_entry = True
         self.num_of_a  = 0
 
     def end_dt( self ):
         self.do_entry = False
+
+    def start_li( self, att ):
+        self.start_dt(att)
+
+    def end_li( self ):
+        self.end_dt()
 
     def start_a( self, att ):
         if self.one_entry:
