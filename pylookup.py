@@ -133,7 +133,6 @@ class IndexProcessor( htmllib.HTMLParser ):
         self.entry      = ""
         self.desc       = ""
         self.list_entry = False
-        self.do_entry   = False
         self.one_entry  = False
         self.num_of_a   = 0
         self.desc_cnt   = 0
@@ -144,19 +143,16 @@ class IndexProcessor( htmllib.HTMLParser ):
     def end_dd( self ):
         self.list_entry = False
 
-    def start_dt( self, att ):
+    def start_li( self, att ):
         self.one_entry = True
-        self.num_of_a  = 0
+        self.num_of_a = 0
 
-    def end_dt( self ):
-        self.do_entry = False
-
-    def start_a( self, att ):
+    def start_a(self, att):
         if self.one_entry:
-            self.url = join( self.dirn, dict( att )[ 'href' ] )
+            self.url = join(self.dirn, dict(att)['href'])
             self.save_bgn()
 
-    def end_a( self ):
+    def end_a(self):
         global VERBOSE
         if self.one_entry:
             if self.num_of_a == 0 :
@@ -168,7 +164,7 @@ class IndexProcessor( htmllib.HTMLParser ):
                         sys.stdout.write("%04d %s\r" \
                                              % (self.desc_cnt, self.desc.ljust(80)))
 
-                # extract fist element
+                # extract first element
                 #  ex) __and__() (in module operator)
                 if not self.list_entry :
                     self.entry = re.sub( "\([^)]+\)", "", self.desc )
