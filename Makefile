@@ -1,5 +1,5 @@
 VER2 := $(shell python2 --version 2>&1 | grep -o "[0-9].[0-9].[0-9]*")
-VER3 := $(shell python3 --version 2>&1 | grep -o "[0-9].[0-9].[0-9]*")
+VER3 := $(shell python3 --version 2>&1 | grep -o "[0-9].[0-9]*.[0-9]*")
 ZIP2 := python-$(VER2)-docs-html.zip
 ZIP3 := python-$(VER3)-docs-html.zip
 URL2 := https://docs.python.org/2/archives/$(ZIP2)
