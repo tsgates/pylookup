@@ -25,13 +25,13 @@
  You can browse python documents from either online or offline. Since I prefer
  offline, here is an easy step:
  
-     make download
+     make build
      
- It will download python document, and construct database for you. If you get in
+ It will download python documents, and construct database for you. If you get in
  any trouble, follow the below steps manually:
 
  1. Download your own version of python document
-   (i.e. http://docs.python.org/archives/python-2.7.2-docs-html.zip)
+   (e.g., http://docs.python.org/archives/python-2.7.2-docs-html.zip)
  2. Unzip: 'unzip python-2.7.2-docs-html.zip'
  3. Index: './pylookup.py -u python-2.7.1-docs-html'
  4. Test : './pylookup.py -l ljust'
@@ -52,19 +52,12 @@
 ;; load pylookup when compile time
 (eval-when-compile (require 'pylookup))
 
-;; set executable file and db file
-(setq pylookup-program (concat pylookup-dir "/pylookup.py"))
-(setq pylookup-db-file (concat pylookup-dir "/pylookup.db"))
-
 ;; set search option if you want
 ;; (setq pylookup-search-options '("--insensitive" "0" "--desc" "0"))
 
 ;; to speedup, just load it on demand
 (autoload 'pylookup-lookup "pylookup"
   "Lookup SEARCH-TERM in the Python HTML indexes." t)
-
-(autoload 'pylookup-update "pylookup" 
-  "Run pylookup-update and create the database at `pylookup-db-file'." t)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Updating Databases
